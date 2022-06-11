@@ -1,0 +1,212 @@
+body{
+    background-color: #111;
+}
+
+/* ------最上方大圖-------------- */
+
+.intro-part, .about-me, .my_experience{
+    background-color: #212121;
+    margin: auto;
+    border-radius: 20px;
+    padding-top: 15px;
+    margin-top: 20px;
+}
+.menu{
+    color: #ff651c;
+    font-size: 28px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+.big-pic{
+    width: 366px;
+    height: 600px;
+    margin: auto;
+    
+}
+.big-pic img{
+    width: 100%;
+    border-radius: 15px;
+}
+.name-arrow{
+    margin-top: -35px;
+}
+.name, .arrow-down{
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 30px;
+}
+.bg-animation{
+    -webkit-animation: bg-animation 1s ease-in-out infinite;
+    animation: bg-animation 1s ease-in-out infinite;
+}
+@keyframes bg-animation {
+0% {
+    transform: translate(0,0)
+}
+50% {
+    transform: translate(0,5px)
+}
+100% {
+    transform: translate(0,0)
+}
+}
+
+/* ------about me-------------- */
+.ab-title{
+    color: #ff651c;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+.line-h{
+    display: flex;
+    align-items: baseline;
+    margin-left: 15px;
+    margin-bottom: 8px;
+}
+.line-h i{
+    color: #ff651c;
+    transform: rotate(50deg);
+    font-size: 14px;
+}
+.line-w{
+    margin-left: 10px;
+    color: rgb(163, 163, 163);
+    font-size: 18px;
+}
+.line-w span{
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+.line-w a{
+    color: rgb(163, 163, 163);
+    text-decoration: none;
+}
+.skill-ti{
+    color: rgb(163, 163, 163);
+    font-size: 14px; 
+    display: flex;
+    justify-content: space-between;
+    width: 92%;
+    margin: auto;
+    margin-bottom: 5px;
+}
+.progress{
+    width: 92%;
+    margin: auto;
+    height: 10px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+.progress-bar{
+    background-color: #ff651c;
+    border-radius: 10px;
+}
+/* .progress-bar_1{
+    animation: progressAnimation 6s;
+}
+@keyframes progressAnimation {
+    0% {
+      width: 5%;
+      background-color: #fe834a;
+    }
+    100% {
+      width: 100%;
+      background-color: #ff651c
+    }
+  }
+.progress-bar_2{
+    animation: progressAnimation2 5s;
+}
+@keyframes progressAnimation2 {
+    0% {
+      width: 5%;
+      background-color: #fe834a;
+    }
+    100% {
+      width: 95%;
+      background-color: #ff651c
+    }
+  } */
+
+/* -------my-experience------ */
+.exp-title{
+    color: #ff651c;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+.work{
+    width: 92%;
+    margin: auto;
+    position: relative;
+}
+.work-tit{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.work-right{
+    transform: translate(10px, -215px);
+}
+.work-dot{
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: rgb(163, 163, 163);
+}
+.work-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(-180px, 20px);
+}
+.working-tit{
+    display: flex;
+    align-items: center;
+}
+.work-pic{
+    width: 60px;
+    height: 60px;
+}
+.work-pic img{
+    width: 100%;
+}
+.work-ver{
+    width: 2px;
+    height: 200px;
+    background-color: rgb(163, 163, 163);
+}
+.work-com{
+    color: #ff651c;
+    font-size: 18px;
+    font-weight: bold;
+}
+.work-pos{
+    color: rgb(163, 163, 163);
+    font-size: 18px;
+    font-weight: bold;
+}
+.work-date{
+    color: #111;
+    background-color: rgb(224, 224, 224);
+    width: 140px;
+    text-align: center;
+    border-radius: 10px;
+    line-height: 30px;
+}
+.work-des{
+    margin-left: -35px;
+}
+.work-des ul{
+    color: white;
+    list-style: none;
+}
+.work-des li{
+    margin-left: 15px;
+}
+
