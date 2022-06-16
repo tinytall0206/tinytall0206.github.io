@@ -144,26 +144,51 @@ body{
     width: 92%;
     margin: auto;
     position: relative;
+    margin-top: 16px;
 }
 .work-tit{
     color: white;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
 }
 .work-right{
-    transform: translate(10px, -215px);
+    /* transform: translate(15px, -250px); */
 }
 .work-dot{
     width: 15px;
     height: 15px;
     border-radius: 10px;
+    border: 2px solid #888;
+    background-color: #fff;
+}
+.work-ver{
+    width: 2px;
+    height: 705px;
     background-color: rgb(163, 163, 163);
+}
+.edu-ver{
+    width: 2px;
+    height: 90px;
+    background-color: rgb(163, 163, 163);
+}
+.edu-ver1{
+    width: 2px;
+    height: 120px;
+    background-color: rgb(163, 163, 163);
+}
+.edu-ver2{
+    width: 2px;
+    height: 110px;
+    background-color: rgb(163, 163, 163);
+}
+.work-king{
+    height: 350px;
 }
 .work-left{
     display: flex;
     flex-direction: column;
     align-items: center;
-    transform: translate(-180px, 20px);
+    transform: translate(-8px, 7px);
 }
 .working-tit{
     display: flex;
@@ -176,11 +201,7 @@ body{
 .work-pic img{
     width: 100%;
 }
-.work-ver{
-    width: 2px;
-    height: 200px;
-    background-color: rgb(163, 163, 163);
-}
+
 .work-com{
     color: #ff651c;
     font-size: 18px;
@@ -198,6 +219,8 @@ body{
     text-align: center;
     border-radius: 10px;
     line-height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .work-des{
     margin-left: -35px;
@@ -206,7 +229,23 @@ body{
     color: white;
     list-style: none;
 }
+.work-des span{
+    font-weight: bolder;
+    font-size: 16px;
+}
 .work-des li{
     margin-left: 15px;
+    color:rgb(163, 163, 163);
+}
+.work-com-name{
+    display: flex;
+    margin-top: 8px;
+}
+.work-com1{
+    margin-top: 0px;
+    transform: translateY(-18px);
+}
+.nchu, .ncue{
+    margin-top: 0px;
 }
 
