@@ -11,15 +11,84 @@ body{
     padding-top: 15px;
     margin-top: 20px;
 }
-
-.menu{
+/* 漢堡menu */
+a:hover {
     color: #ff651c;
+    text-decoration: none;
+}
+.header{
+    /* color: #ff651c;
     font-size: 28px;
     display: flex;
     justify-content: flex-end;
     margin-right: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 10px; */
+
+    padding:12px 12px;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    top: 0;
+    right: 0;
+    left: 0;
+    /* background-color:#212121; */
 }
+.header__nav{
+    list-style: none;
+}
+.nav__item {
+    color: #fffdfe;
+    padding:0 12px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.nav__item a{
+    text-decoration: none;
+    color: #fffdfe;
+    margin-top: 8px;
+}
+.nav__item i{
+    margin-right: 5px;
+}
+.hamBar{
+    display: none;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+@media all and (max-width: 768px) {  
+    .header__nav{
+        display: flex;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom:0;
+        flex-direction: column;
+        transform:translateY(100%);
+        background-color: #212121;
+        height: 0px;
+        overflow:hidden;
+        transition: all .3s ;
+      }
+      .nav__item{
+          width: 100%;
+        }
+      
+      .header__nav.show{
+        height: 100vh;
+        transition: all .3s;
+        z-index: 2;
+    
+      }
+      .hamBar{
+        display: flex;
+      }
+     
+}
+
 .big-pic{
     width: 366px;
     height: 600px;
@@ -72,6 +141,7 @@ body{
     position: relative;
     transform: translateX(80px);
     margin-top: 16px;
+    z-index: 0;
   }
   
   .static-text{

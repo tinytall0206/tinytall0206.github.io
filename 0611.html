@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="0611.css">
     <link rel="stylesheet" href="./css/slider.css">
     <link rel="stylesheet" href="./css/lightbox.css">
@@ -14,8 +15,31 @@
 </head>
 <body>
     <div class="intro-part">
-        <div class="menu">
-            <i class="fa-solid fa-bars"></i>
+        <div class="header">
+            <ul class="header__nav">
+
+                <li class="nav__item">
+                    <a href="#" title="1"><i class="fa-solid fa-house"></i>Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" title="2"><i class="fa-solid fa-user"></i>About Me</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" title="3"><i class="fa-solid fa-briefcase"></i>My Experience</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" title="4"><i class="fa-solid fa-laptop-code"></i></i>My Works</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" title="5"><i class="fa-solid fa-envelope"></i>Contact</a>
+                </li>
+            </ul>
+
+            <a href="#" class="hamBar">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+            
+            
         </div>
         <div class="big-pic">
             <img src="./img/ver.jpg" alt="">
@@ -501,6 +525,30 @@
             pause_icon: '<i class="far fa-pause-circle"></i>',
             prev_icon: '<i class="fas fa-angle-left"></i>',
             next_icon: '<i class="fas fa-angle-right"></i>'
+        });
+    </script>
+
+    <script>
+        $(document).ready(() => {
+        $('.hamBar').click(function(){
+            //避免 a 標籤會觸發
+            event.preventDefault();
+            //觸發展開收起來
+            $('.header__nav').toggleClass('show');  
+        })
+        $('.header__nav li a').click(function(){
+            event.preventDefault();
+            //移除class，才會讓 menu 消失
+            $('.header__nav').removeClass('show');
+            //以下是滾動動畫
+            var sectionTitle = this.title;
+            console.log(sectionTitle);
+            var sectionId = "#section--" + sectionTitle;
+            console.log(sectionId);
+            var scrollPoint = $(sectionId).offset().top;
+            var lastScrollPoint = scrollPoint - 100;
+            $("html,body").animate({ scrollTop: lastScrollPoint }, 800);
+        })
         });
     </script>
 </body>
