@@ -19,7 +19,7 @@
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform:translate(-50%, 2250px);
+    transform:translate(-50%, 2335px);
 }
 .sliderr{
     /* box-shadow: 0 0 10px rgb(16, 255, 162); */
@@ -35,7 +35,7 @@
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform:translate(-50%, 2750px);
+    transform:translate(-50%, 2820px);
 }
 
 .slider .slide{
