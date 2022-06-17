@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="0611.css">
+    <link rel="stylesheet" href="./css/slider.css">
+    <link rel="stylesheet" href="./css/lightbox.css">
 </head>
 <body>
     <div class="intro-part">
@@ -255,7 +257,7 @@
                             </div> -->
                             <div class="working">
                                 <div class="work-com">
-                                    Digital Education Institute
+                                    Digital Education Institute (資策會)
                                 </div>
                                 <div class="work-pos">
                                     Front-end & UIUX Web Design Training 
@@ -341,10 +343,120 @@
 
         </div>
     </div>
-    
+    <div class="my_works">
+        <div class="myworks_tit">
+            My Works
+        </div>
 
+        <!-- movwe影音資訊整合平台 -->
+        <div class="my_movwe">
+            <div id="slider" style="max-height: 550px; width: 90%; max-width: 960px; margin: 0 auto">
+                <div class="slide">
+                    <a href="" rel="lightbox[plants]"><video src="./img/Produce.mp4" autoplay loop muted></video></a>
+                </div>
+                <div class="slide">
+                    <a href="" rel="lightbox[plants]"><img src="./img/movwe_01.jpg" alt="" /></a>
+                </div>
+                <div class="slide">
+                    <a href="" rel="lightbox[plants]"><img src="./img/movwe_02.jpg" alt="" /></a>
+                </div>
+                <div class="slide">
+                    <a href="" rel="lightbox[plants]"><img src="./img/movwe_03.jpg" alt="" /></a>
+                </div>
+                <div class="slide">
+                    <a href="" rel="lightbox[plants]"><img src="./img/movwe_04.jpg" alt="" /></a>
+                </div>
+            </div>
+            
+            <div class="movwe_intro">
+                <div class="movwe_tit">
+                    Cross-OTT-Platform Searching Site
+                </div>
+                <div class="movwe_name">
+                    MOVWE
+                </div>
+                <div class="movwe_des">
+                    Let the users easily find out which OTT platforms have launched the film and watch it directly. Also the users can post articles and shop at this site.
+                </div>
+                <div class="movwe_deve">
+                    Development：HTML / CSS / JavaScript / php / MySQL
+                </div>
+                <div class="movwe_year">
+                    Year：2022
+                </div>
+                <div class="show_more">
+                    <a href="">SHOW MORE</a> 
+                </div>
+            </div>
+        </div>
+        
+        <!-- 倉鼠先生mr hamster -->
+        <div class="my_movwe">
+            <div id="sliderr" style="max-height: 550px; width: 90%; max-width: 960px; margin: 0 auto" class="sliderr">
+                <div class="slide">
+                    <a href="" rel="lightbox[plants]"><video src="./img/h1.mp4" autoplay loop muted></video></a>
+                </div>
+                <div class="slide">
+                    <a href="" rel="lightbox[plants]"><video src="./img/h2.mp4" autoplay loop muted></video></a>
+                </div>
+                <div class="slide">
+                    <a href="" rel="lightbox[plants]"><video src="./img/h3.mp4" autoplay loop muted></video></a>
+                </div>
+                <div class="slide">
+                    <a href="" rel="lightbox[plants]"><video src="./img/h4.mp4" autoplay loop muted></video></a>
+                </div>
+            </div>
+            
+            <div class="ham_intro">
+                <div class="ham_tit">
+                    Custmoized Hamster House Workshop
+                </div>
+                <div class="ham_name">
+                    Mr. Hamster
+                </div>
+                <div class="ham_des">
+                    One-page official site, including brief hamster introduction and online ordering flow, to make the shopping flow easier and more convenient
+                </div>
+                <div class="ham_deve">
+                    Development：HTML / CSS / jQUERY 
+                </div>
+                <div class="ham_year">
+                    Year：2022
+                </div>
+                <div class="show_more">
+                    <a href="">SHOW MORE</a> 
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="contact">
+        
+    </div>
+    
+    <script src="./js/slider.js"></script>
+    <script src="./js/slider copy.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <script>
+        var slider = new Slider("slider", {
+            play_icon: '<i class="fas fa-play"></i>',
+            pause_icon: '<i class="far fa-pause-circle"></i>',
+            prev_icon: '<i class="fas fa-angle-left"></i>',
+            next_icon: '<i class="fas fa-angle-right"></i>'
+        });
+    </script>
+
+    <script>
+        var sliderr = new Sliderr("sliderr", {
+            play_icon: '<i class="fas fa-play"></i>',
+            pause_icon: '<i class="far fa-pause-circle"></i>',
+            prev_icon: '<i class="fas fa-angle-left"></i>',
+            next_icon: '<i class="fas fa-angle-right"></i>'
+        });
+    </script>
 </body>
 </html>

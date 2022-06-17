@@ -4,7 +4,7 @@ body{
 
 /* ------最上方大圖-------------- */
 
-.intro-part, .about-me, .my_experience{
+.intro-part, .about-me, .my_experience, .my_works{
     background-color: #212121;
     margin: auto;
     border-radius: 20px;
@@ -134,7 +134,7 @@ body{
   } */
 
 /* -------my-experience------ */
-.exp-title{
+.exp-title, .myworks_tit{
     color: #ff651c;
     font-size: 24px;
     font-weight: bold;
@@ -249,3 +249,81 @@ body{
     margin-top: 0px;
 }
 
+/* -------my-works------ */
+.my_works{
+    height: 1050px;
+}
+.movwe_intro{
+    width: 90%;
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 3120px;
+    left: 18px;
+}
+.movwe_tit{
+    font-size: 14px;
+    color: #fff;
+}
+.movwe_des, .movwe_deve, .movwe_year{
+    font-size: 14px;
+    margin-top: 16px;
+    color: rgb(182, 182, 182);
+}
+.movwe_deve, .movwe_year, .show_more{
+    margin-top: 10px;
+}
+.movwe_name{
+    font-size: 20px;
+    color: #fff;
+    /* margin-top: 240px; */
+    font-weight: bold;
+}
+.show_more a{
+   color: #ff651c; 
+   text-decoration: none;
+   font-size: 14px;
+   font-weight: bold;
+   display: inline-block;
+   vertical-align: middle;
+   position: relative;
+}
+.show_more::after{
+    content: '';
+    width: 0%;
+    height: 1px;
+    background-color: #ff651c;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all .3s linear;
+}
+.show_more:hover::after{
+    width: 5.4%;
+}
+
+/* 倉鼠先生 */
+.ham_intro{
+    width: 90%;
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 3620px;
+    left: 18px;
+}
+.ham_tit{
+    font-size: 14px;
+    color: #fff;
+}
+.ham_des, .ham_deve, .ham_year{
+    font-size: 14px;
+    margin-top: 16px;
+    color: rgb(182, 182, 182);
+}
+.ham_deve, .ham_year, .ham_more{
+    margin-top: 10px;
+}
+.ham_name{
+    font-size: 20px;
+    color: #fff;
+    /* margin-top: 240px; */
+    font-weight: bold;
+}
