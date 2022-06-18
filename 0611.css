@@ -1,7 +1,10 @@
 body{
     background-color: #111;
 }
-
+html{
+    scroll-behavior: smooth;
+    
+}
 /* ------最上方大圖-------------- */
 
 .intro-part, .about-me, .my_experience, .my_works, .contact{
@@ -11,89 +14,114 @@ body{
     padding-top: 15px;
     margin-top: 20px;
 }
-/* 漢堡menu */
-a:hover {
+
+/* 小漢堡 */
+.nav-bar{
+    display: none;
+}
+
+.ham {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    /* background: rgba(0,0,0,.3); */
+    display: block;
+    position: relative;
+    margin-left: 6px;
+  }
+  
+  .ham-origin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  
+  .ham-bar {
+    height: 2px;
+    width: 26px;
+    position: absolute;
+    background: #ff651c;
+    margin: -1px 0 0 -13px;
+    transition: all .5s;
+  }
+  
+  .ham-bar--top {
+    transform: translateY(-6px);
+  }
+  
+  .ham-bar--bottom {
+    transform: translateY(6px);
+  }
+  
+  #nav-toggle {
+    display: none;
+  }
+  
+  #nav-toggle:checked ~ .ham .ham-bar--middle {
+    opacity: 0;
+  }
+  
+  #nav-toggle:checked ~ .ham .ham-bar--top {
+    transform: rotate(-45deg);
+  }
+  
+  #nav-toggle:checked ~ .ham .ham-bar--bottom {
+    transform: rotate(45deg);
+  }
+  
+  /* Nav Style */
+  
+  .menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 30px;
+    background: #212121d4;
+    /* 用 translate 把選單藏到畫面右邊去 */
+    transform: translateX(100%);
+    transition: transform .5s;
+  }
+  
+  #nav-toggle:checked ~ .menu {
+    transform: none;
+  }
+  
+  .menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 13px;
+  }
+  
+  .menu-item + .menu-item {
+    margin-top: 20px;
+  }
+  
+  .menu-link {
+    text-decoration: none;
+    color: white;
+  }
+  .menu-item{
+    font-size: 18px;
+  }
+  .menu-item i{
+    margin-right: 4px;
+    font-size: 20px;
+  }
+  a:hover {
     color: #ff651c;
     text-decoration: none;
 }
-.header{
-    /* color: #ff651c;
-    font-size: 28px;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 15px;
-    margin-bottom: 10px; */
 
-    padding:12px 12px;
-    position: fixed;
-    display: flex;
-    justify-content: flex-end;
-    top: 0;
-    right: 0;
-    left: 0;
-    /* background-color:#212121; */
-}
-.header__nav{
-    list-style: none;
-}
-.nav__item {
-    color: #fffdfe;
-    padding:0 12px;
-    border-radius: 4px;
-    text-align: center;
-}
-
-.nav__item a{
-    text-decoration: none;
-    color: #fffdfe;
-    margin-top: 8px;
-}
-.nav__item i{
-    margin-right: 5px;
-}
-.hamBar{
+/* 大圖 */
+.big_pic_pc{
     display: none;
-    width: 44px;
-    height: 44px;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
 }
-@media all and (max-width: 768px) {  
-    .header__nav{
-        display: flex;
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom:0;
-        flex-direction: column;
-        transform:translateY(100%);
-        background-color: #212121;
-        height: 0px;
-        overflow:hidden;
-        transition: all .3s ;
-      }
-      .nav__item{
-          width: 100%;
-        }
-      
-      .header__nav.show{
-        height: 100vh;
-        transition: all .3s;
-        z-index: 2;
-    
-      }
-      .hamBar{
-        display: flex;
-      }
-     
-}
-
 .big-pic{
     width: 366px;
     height: 600px;
     margin: auto;
-    
 }
 .big-pic img{
     width: 100%;
@@ -162,7 +190,7 @@ a:hover {
       position: absolute;
       border-left: solid 1px  #EDDE5D;
       width: 100%;
-      height: 36%;
+      height: 37%;
       bottom: 50%;
       left:0;
       background: #212121;
@@ -196,6 +224,9 @@ a:hover {
   }
 
 /* ------about me-------------- */
+.ab-left{
+    display: none;
+}
 .about-me{
     padding-bottom: 24px;
 }
@@ -250,7 +281,7 @@ a:hover {
     background-color: #ff651c;
     border-radius: 10px;
 }
-/* .progress-bar_1{
+.progress-bar_1{
     animation: progressAnimation 6s;
 }
 @keyframes progressAnimation {
@@ -275,7 +306,7 @@ a:hover {
       width: 95%;
       background-color: #ff651c
     }
-  } */
+  }
 
 /* -------my-experience------ */
 .exp-title, .myworks_tit, .con_tit{
@@ -399,12 +430,22 @@ a:hover {
 .my_works{
     height: 1050px;
 }
+.my_movwe{
+    width: 93%;
+    margin: auto;
+}
+.myworks_tit{
+    margin-bottom: 24px;
+}
 .movwe_intro{
-    width: 90%;
+    width: 97%;
+    margin: auto;
+    margin-top: 16px;
+    margin-bottom: 32px;
     /* border: 1px solid red; */
-    position: absolute;
-    top: 3200px;
-    left: 22px;
+    /* position: absolute;
+    top: 3270px;
+    left: 22px; */
 }
 .movwe_tit{
     font-size: 14px;
@@ -433,27 +474,17 @@ a:hover {
    vertical-align: middle;
    position: relative;
 }
-.show_more::after{
-    content: '';
-    width: 0%;
-    height: 1px;
-    background-color: #ff651c;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: all .3s linear;
-}
-.show_more:hover::after{
-    width: 5.4%;
-}
+
 
 /* 倉鼠先生 */
 .ham_intro{
-    width: 90%;
+    width: 97%;
+    margin: auto;
+    margin-top: 16px;
     /* border: 1px solid red; */
-    position: absolute;
-    top: 3680px;
-    left: 22px;
+    /* position: absolute;
+    top: 3750px;
+    left: 22px; */
 }
 .ham_tit{
     font-size: 14px;
@@ -516,4 +547,330 @@ a:hover {
 }
 .my_email a{
     color: #fff;
+}
+
+/* .contact {
+    transform: translateX(0px);
+    opacity: 1;
+    transition: 1s;
+} */
+
+
+/* ----pc版-------------------------------- */
+@media screen and (min-width: 750px) {
+
+    /*左側menu*/
+    .ham-origin{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+    .nav-bar{
+        display: block;
+        z-index: 99;
+    }
+
+    *{
+        margin: 0;
+        font-family: 'DM Sans', sans-serif;
+    }
+    .body_container{
+        display: flex;
+
+        width: 100%;
+        max-width: 1950px;
+        display: flex;
+        /* flex-direction: column; */
+        height: 100%;
+        position: relative;
+    }
+    .nav-bar{
+        width: 250px;
+        height: 100vh;
+        background-color: #212121;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .intro-pic{
+        width: 200px;
+        
+    }
+    .intro-pic img{
+        width: 100%;
+    }
+    .intro-name{
+        color: white;
+        font-size: 40px;
+        text-align: center;
+    }
+    .intro-line{
+        background-color: #ff651c;
+        width: 250px;
+        height: 0.5px;
+    }
+    .option{
+        margin-top: 10px;
+        list-style: none;
+        margin-left: 60px;
+    }
+    .option a{
+        color: white;
+        text-decoration: none;
+        font-size: 24px;
+    }
+    .option i{
+        margin-right: 15px;
+        margin-top: 35px;
+    }
+    .fa-user{
+        padding-right: 5px;
+        padding-left: 2px;
+    }
+    .option a:hover{
+        color: #ff651c;
+    }
+    
+    .right-hand{
+        width: calc(100vw - 250px);
+        height: 100vh;
+        background-color: #111;
+    }
+
+    /* ----intro part------------------- */
+    .right-hand{
+        width: 100%;
+
+        width: 100%;
+        height: 100%;
+        /* background-color: rgb(124, 124, 124); */
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center;
+        align-items: center; */
+        position: relative;
+    }
+    .intro-part{
+        width: 80%;
+        height: 95vh;
+        transform: translateX(125px);
+        /* outline: 1px solid red; */
+    }
+
+    .big-pic{
+        display: none;
+    }
+    .big_pic_pc{
+        display: block;
+        width: 68%;
+        margin: auto;
+    }
+    .big_pic_pc img{
+        width: 100%;
+        border-radius: 20px;
+        box-shadow: 0 0 25px rgb(0 0 0 / 85%);
+    }
+    .name-arrow{
+        margin-top: 20px;
+    }
+    .name{
+        font-size: 40px;
+    }
+    .typing{
+        display: flex;
+        margin: auto;
+        margin-left: 35%;
+        margin-top: 12px;
+    }
+    .static-text{
+        font-size: 20px;
+    }
+    .dynamic-text{
+        font-size: 20px;
+    }
+
+    /* ---About-me----------------------- */
+
+    .about-me{
+        width: 80%;
+        height: 95vh;
+        transform: translateX(125px);
+    }
+    .about-out{
+        width: 95%;
+        outline: 1px solid red;
+        margin: auto;
+        margin-top: 16px;
+    }
+    .ab-title{
+        font-size: 32px;
+    }
+    .about-part{
+        display: flex;
+        justify-content: center;
+        outline: 1px solid green;
+        margin-top: 24px;
+    }
+    .ab-left{
+        outline: 1px solid blue;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+    .ab-left-img{
+        width: 60%;
+        border-radius: 30px;
+    }
+    .ab-left-img img{
+        width: 100%;
+        border-radius: 20px;
+    }
+    .ab-right{
+        outline: 1px solid red;
+        width: 50%;
+    }
+    .ab-line{
+        display: flex;
+        justify-content: space-between;
+    }
+    .line-w span{
+        font-size: 22px;
+    }
+    .line-w{
+        font-size: 20px;
+    }
+    .line-h{
+        margin-bottom: 16px;
+    }
+    .skill-ti{
+        font-size: 20px;
+    }
+
+    /* ----my--experience----------------- */
+    .my_experience{
+        width: 80%;
+        height: 98vh;
+        transform: translateX(125px);
+        /* outline: 1px solid blue; */
+    }
+    .exp-title{
+        font-size: 32px;
+        margin-top: 16px;
+    }
+    .work-tit{
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+    .work-com, .wor-pos{
+        font-size: 22px;
+    }
+    .work-date{
+        font-size: 20px;
+        width: 180px;
+        border-radius: 8px;
+    }
+    .work-des span{
+        font-size: 20px;
+    }
+    .work-des li{
+        font-size: 18px;
+    }
+    .work-ver{
+        height: 100%;
+    }
+    .work-king{
+        height: 320px;
+    }
+    .work-pc{
+        display: flex;
+        justify-content: space-between;
+        /* outline: 1px solid red; */
+        width: 96%;
+        height: 92%;
+        overflow:scroll;
+        margin: auto;
+    }
+    .work-pc::-webkit-scrollbar {
+        display: none;
+    }
+    .work{
+        margin-left: 9px;
+    }
+    .work-edu{
+        width: 80%;
+        margin-left: 32px;
+    }
+    .edu-ver, .edu-ver1, .edu-ver2{
+        height: 110px;
+    }
+    .work-left{
+        margin-right: 12px;
+    }
+    .work-com1{
+        margin-top: 16px;
+    }
+    
+    /* ---作品集----- */
+    .my_works{
+        width: 80%;
+        height: 98vh;
+        transform: translateX(125px);
+        /* outline: 1px solid blue; */
+    }
+    .myworks_tit{
+        font-size: 32px;
+        margin-top: 16px;
+    }
+    .my_movwe{
+        margin-top: 32px;
+    }
+    .movwe_tit, .ham_tit{
+        font-size: 22px;
+    }
+    .movwe_name, .ham_name{
+        font-size: 24px;
+    }
+    .movwe_des, .movwe_deve, .movwe_year, .ham_des, .ham_deve, .ham_year{
+        font-size: 20px;
+    }
+
+    .show_more a{
+        font-size: 20px;
+    }
+    .show_more a::after{
+        content: '';
+        width: 0%;
+        height: 1px;
+        background-color: #ff651c;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: all .3s linear;
+    }
+    .show_more a:hover::after{
+        width:100%;
+        height: 5%;
+    }
+    .my_ham{
+        margin-top: 100px;
+    }
+    /* ----contact---------- */
+    .contact{
+        width: 80%;
+        height: 30vh;
+        transform: translateX(125px);
+        /* outline: 1px solid blue; */
+    }
+    .con_tit{
+        font-size: 32px;
+        margin-top: 16px;        
+    }
+    .contact-pc{
+        display: flex;
+    }
+    .con_email{
+        width: 48%;
+    }
 }
