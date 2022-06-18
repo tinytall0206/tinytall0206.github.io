@@ -136,6 +136,9 @@ html{
     text-align: center;
     font-size: 30px;
 }
+.arrow-down a{
+    color: #fff;
+}
 .bg-animation{
     -webkit-animation: bg-animation 1s ease-in-out infinite;
     animation: bg-animation 1s ease-in-out infinite;
