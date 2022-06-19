@@ -284,7 +284,7 @@ html{
     background-color: #ff651c;
     border-radius: 10px;
 }
-.progress-bar_1{
+/* .progress-bar_1{
     animation: progressAnimation 6s;
 }
 @keyframes progressAnimation {
@@ -309,7 +309,7 @@ html{
       width: 95%;
       background-color: #ff651c
     }
-  }
+  } */
 
 /* -------my-experience------ */
 .exp-title, .myworks_tit, .con_tit{
@@ -374,8 +374,8 @@ html{
     align-items: center;
 }
 .work-pic{
-    width: 60px;
-    height: 60px;
+    width: 85px;
+    height: 85px;
 }
 .work-pic img{
     width: 100%;
@@ -720,11 +720,17 @@ html{
     }
     .ab-left-img{
         width: 60%;
-        border-radius: 30px;
+        border-radius: 20px;
+
+        overflow: hidden;
     }
     .ab-left-img img{
         width: 100%;
         border-radius: 20px;
+        transition: ease-in-out .3s;
+    }
+    .ab-left-img img:hover{
+        transform: scale(1.1);
     }
     .ab-right{
         outline: 1px solid red;
@@ -872,5 +878,22 @@ html{
     }
     .con_email{
         width: 48%;
+        transition: .4s;
     }
+    .con_email:hover{
+        transform: translateY(-8px);
+    }
+    .email{
+        transition: .4s;
+        
+    }
+    /* .con_email:hover .email{
+        color: #fff;
+    }
+    .con_email:hover .email_me{
+        color: #fe834a;
+    }
+    .con_email:hover .my_email a{
+        color: #ff651c;
+    } */
 }
