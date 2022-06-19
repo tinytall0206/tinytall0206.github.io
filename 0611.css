@@ -318,9 +318,9 @@ html{
     font-weight: bold;
     text-align: center;
 }
-.my_experience{
+/* .my_experience{
     height: 1680px;
-}
+} */
 .work{
     width: 92%;
     margin: auto;
@@ -428,7 +428,9 @@ html{
     margin-top: 0px;
 }
 
-
+.work-pc{
+    padding-bottom: 32px;
+}
 /* -------my-works------ */
 .my_works{
     height: 1050px;
@@ -581,12 +583,12 @@ html{
     .body_container{
         display: flex;
 
-        width: 100%;
+        /* width: 100%; */
         max-width: 1950px;
         display: flex;
         /* flex-direction: column; */
         height: 100%;
-        position: relative;
+        /* position: relative; */
     }
     .nav-bar{
         width: 250px;
@@ -636,28 +638,22 @@ html{
     }
     
     .right-hand{
-        width: calc(100vw - 250px);
-        height: 100vh;
+        /* width: calc(100vw - 250px); */
+        width: 100%;
+        /* height: 100vh; */
         background-color: #111;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* outline: 1px solid yellow; */
+       
     }
 
     /* ----intro part------------------- */
-    .right-hand{
-        width: 100%;
-
-        width: 100%;
-        height: 100%;
-        /* background-color: rgb(124, 124, 124); */
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        /* justify-content: center;
-        align-items: center; */
-        position: relative;
-    }
+    
     .intro-part{
         width: 80%;
-        height: 95vh;
+        /* height: 95vh; */
         transform: translateX(125px);
         /* outline: 1px solid red; */
     }
@@ -695,10 +691,10 @@ html{
     }
 
     /* ---About-me----------------------- */
-
     .about-me{
+
         width: 80%;
-        height: 95vh;
+        /* height: 95vh; */
         transform: translateX(125px);
     }
     .about-out{
@@ -754,7 +750,7 @@ html{
     /* ----my--experience----------------- */
     .my_experience{
         width: 80%;
-        height: 98vh;
+        /* height: 98vh; */
         transform: translateX(125px);
         /* outline: 1px solid blue; */
     }
@@ -784,15 +780,15 @@ html{
         height: 100%;
     }
     .work-king{
-        height: 320px;
+        height: 100%;
     }
     .work-pc{
         display: flex;
         justify-content: space-between;
         /* outline: 1px solid red; */
         width: 96%;
-        height: 92%;
-        overflow:scroll;
+        /* height: 92%;
+        overflow:scroll; */
         margin: auto;
     }
     .work-pc::-webkit-scrollbar {
@@ -805,9 +801,9 @@ html{
         width: 80%;
         margin-left: 32px;
     }
-    .edu-ver, .edu-ver1, .edu-ver2{
+    /* .edu-ver, .edu-ver1, .edu-ver2{
         height: 110px;
-    }
+    } */
     .work-left{
         margin-right: 12px;
     }
@@ -818,8 +814,9 @@ html{
     /* ---作品集----- */
     .my_works{
         width: 80%;
-        height: 98vh;
+        /* height: 95vh; */
         transform: translateX(125px);
+        /* padding-bottom: 40px; */
         /* outline: 1px solid blue; */
     }
     .myworks_tit{
