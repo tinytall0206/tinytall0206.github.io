@@ -377,6 +377,11 @@ html{
     width: 85px;
     height: 85px;
 }
+.work_kingnet{
+    width: 55px;
+    height: 55px;
+    margin-right: 8px;
+}
 .work-pic img{
     width: 100%;
 }
@@ -565,6 +570,24 @@ html{
 @media screen and (min-width: 750px) {
 
     /*左側menu*/
+    .op1{
+        margin-top: 32px;
+    }
+    .option div {
+        width: 200px;
+        display: flex;
+        background: #111;
+        padding: 15px 4px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        /* margin-right:150px; */
+        transform: translateX(-18% );
+        margin-top: 24px;
+    }
+    .option .op1{
+        margin-top: 32px;
+    }
     .ham-origin{
         display: none;
     }
@@ -599,11 +622,14 @@ html{
         left: 0;
     }
     .intro-pic{
-        width: 200px;
-        
+        width: 250px;
+
     }
     .intro-pic img{
         width: 100%;
+    }
+    .intro-name-part{
+        margin-top: 24px;
     }
     .intro-name{
         color: white;
@@ -624,10 +650,11 @@ html{
         color: white;
         text-decoration: none;
         font-size: 24px;
+        transition: .4s;
     }
     .option i{
         margin-right: 15px;
-        margin-top: 35px;
+        /* margin-top: 35px; */
     }
     .fa-user{
         padding-right: 5px;
