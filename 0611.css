@@ -912,8 +912,11 @@ html{
     }
 
     /* 個人履歷設計 */
+    .my_cv{
+        margin-top: 80px;
+    }
     .cv_intro{
-        margin-top: 40px;
+        margin-top: 45px;
     }
     /* ----contact---------- */
     .contact{
