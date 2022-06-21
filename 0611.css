@@ -437,9 +437,9 @@ html{
     padding-bottom: 32px;
 }
 /* -------my-works------ */
-.my_works{
+/* .my_works{
     height: 1050px;
-}
+} */
 .my_movwe{
     width: 93%;
     margin: auto;
@@ -515,6 +515,16 @@ html{
     font-weight: bold;
 }
 
+/* boxful切板練習 */
+.slider3{
+    width: 98%;
+    margin: auto;
+    margin-top: 32px;
+}
+.slider3 img{
+    width: 100%;
+}
+
 /* contact */
 .contact{
     height: 460px;
@@ -588,6 +598,7 @@ html{
     .option .op1{
         margin-top: 32px;
     }
+    
     .ham-origin{
         display: none;
     }
@@ -726,7 +737,7 @@ html{
     }
     .about-out{
         width: 95%;
-        outline: 1px solid red;
+        /* outline: 1px solid red; */
         margin: auto;
         margin-top: 16px;
     }
@@ -736,11 +747,11 @@ html{
     .about-part{
         display: flex;
         justify-content: center;
-        outline: 1px solid green;
+        /* outline: 1px solid green; */
         margin-top: 24px;
     }
     .ab-left{
-        outline: 1px solid blue;
+        /* outline: 1px solid blue; */
         width: 50%;
         display: flex;
         justify-content: center;
@@ -760,8 +771,9 @@ html{
         transform: scale(1.1);
     }
     .ab-right{
-        outline: 1px solid red;
+        /* outline: 1px solid red; */
         width: 50%;
+        
     }
     .ab-line{
         display: flex;
@@ -888,6 +900,20 @@ html{
     }
     .my_ham{
         margin-top: 100px;
+    }
+
+    /* boxful切板練習 */
+    .slider3{
+        width: 40%;
+    }
+    .boxful{
+        align-items: center;
+        margin-top: 80px;
+    }
+
+    /* 個人履歷設計 */
+    .cv_intro{
+        margin-top: 40px;
     }
     /* ----contact---------- */
     .contact{

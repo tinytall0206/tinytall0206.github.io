@@ -1,0 +1,1582 @@
+/* ---header----------------------------------------------------- */
+/* *{
+    outline: 1px solid red;
+} */
+.head{
+    width: 100%;
+    height: 50px;
+    background: rgba(245, 245, 245, 0.74);
+    display: flex;
+    align-items: center;
+    position: fixed !important;
+    top: 0;
+    z-index: 10;
+}
+.nav{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-logo{
+    width: 50%;
+}
+.nav-pic{
+    width: 90%; 
+}
+.nav-pic img{
+    width: 100%;
+    max-width: 140px;
+}   
+.nav-right .nav-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbtn{
+    margin-right: 5px;
+    border: 1px solid #00c4b4;
+    border-radius: 20px;
+    padding: 3px 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.nav-btn a{
+    text-decoration: none;
+    color: #00c4b4;
+}
+.nav-btn .menu{
+    color: #333;
+    font-size: 25px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.nav-left{
+    display: none;
+}
+.nav-pc-button{
+    display: none;
+}
+/* ---banner--------------------------------------------------------- */
+.reservation{
+    display: none;
+}
+.banner-pic-pc{
+    display: none;
+}
+.banner-pic{
+    height: 600px;
+    width: 100%;
+}
+.banner-pic{
+    width: 100%;
+    background: url(img/banner-rwd.webp);
+    background-repeat: no-repeat;
+    background-position: -20px 50px;
+    background-size: cover;
+}
+.banner-btn{
+    background: #f7d33f;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    border-radius: 20px;
+    padding: 5px 0;
+    margin-top: -70px;
+}
+.banner-btn a{
+    color: #333;
+    text-decoration: none;
+}
+.banner-btn:hover{
+    background: #dbba34
+}
+.banner-btn:hover a{
+    color: white;
+}
+/* ---我們的倉儲⽅案----------------------------------------- */
+.storecase{
+    margin: auto;
+    margin-top:90px;
+}
+.text{
+    text-align: center;
+}
+.storecase-title h2{
+    font-size: 20px;
+    font-weight: bolder;
+    color: #324a5e;
+    transform: translateY(-10px);
+}
+.storecase p{
+    color: #949494;
+    font-size: 15px;
+    margin-top: 20px;
+}
+.storecase-title{
+    width: 100%;
+}
+.storecase-title>div{
+    background: rgba(0,196,179,.2);
+    width: 160px;
+    height: 15px;
+    margin: auto;
+}
+/* ------我們的倉儲方案mycard------------------------ */
+.first-card{
+    background: #e7e6e2;
+    height: 530px;
+    margin-bottom: 16px;
+}
+.sec-card{
+    background: #e9f8f7;
+    height: 530px;
+    margin-bottom: 16px;
+}
+.third-card{
+    background: #fef9e5;
+    height: 530px;
+    margin-bottom: 16px;
+}
+.card-info{
+    text-align: center;
+    padding-top: 20px;
+}
+.store-style{
+    font-size: 16px;
+    color: #324a5e;
+    font-weight: bolder;
+}
+.store-name{
+    font-size: 22px;
+    color: #324a5e;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+.store-info{
+    color: #9b9b9b;
+}
+.detail{
+    border: 2px solid #324a5e;
+    border-radius: 20px;
+    width: 300px;
+    margin: auto;
+    line-height: 2rem;
+}
+.detail a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #324a5e;
+    font-weight: bolder;
+}
+.detail:hover{
+    background: #324a5e;
+}
+.detail:hover a{
+    color: white;
+}
+.img-wrap{
+    width: 320px;
+    height: 320px;
+    margin: auto;
+}
+.img-wrap img{
+    width: 100%;
+}
+.sec-card .store-info{
+    margin-bottom: 30px;
+}
+.sec-card .detail{
+    margin-top: -30px;
+}
+.third-card .store-info{
+    margin-bottom: 30px;
+}
+.third-card .detail{
+    margin-top: -30px;
+}
+/* ------方案及價格------------------------------ */
+.price{
+    margin: auto;
+    margin-top: 90px;
+    text-align: center;
+}
+.price-title h2{
+    font-size: 20px;
+    font-weight: bolder;
+    color: #324a5e;
+    transform: translateY(-10px);
+}
+.price p{
+    color: #949494;
+    font-size: 15px;
+    margin-top: 20px;
+}
+.price-title{
+    width: 100%;
+}
+.price-title>div{
+    background: rgba(0,196,179,.2);
+    width: 120px;
+    height: 15px;
+    margin: auto;
+}
+/* ------任意倉方案------------------------ */
+.gray-box{
+    background: #e7e6e2;
+    margin-top: 30px;
+}
+.gray-box-border{
+    width: 85%;
+    margin: auto;
+    padding-top: 20px;
+    background: #e7e6e2;
+}
+.card-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.text-info p{
+    color: #333;
+}
+.clock-wrap{
+    width: 30px;
+    height: 30px;
+    
+}
+.clock-wrap img{
+    width: 100%;
+}
+.open-time{
+    display: flex;
+    align-items:baseline;
+}
+.open-title{
+    font-size: 13px;
+}
+.open-time{
+    font-size: 13px;
+}
+.longcard-btn{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.longcard-btn a{
+    text-decoration: none;
+    text-align: center;
+}
+.l1{
+    color: #444;
+    background: #f8d340;
+    padding: 8px 0 5px;
+    border-radius: 20px;
+    font-weight: bolder;
+    font-size: 1rem;
+    width: 48%;
+    
+}
+.l2{
+    border: 2px solid #324a5e;
+    color:#324a5e;
+    padding: 6px 30px;
+    border-radius: 20px;
+    font-weight: bolder;
+    font-size: 1rem;
+    width: 48%;
+}
+.card-bottom{
+    position: relative;
+}
+.card-bottom-wrap img{
+    transform: translateX(-50%);
+    max-height: 320px;
+    position: absolute;
+    left: 50%;
+    background: #e7e6e2;
+}
+/*---------map------------------------------------  */
+.gray-box-border2{
+    width: 85%;
+    margin: auto;
+    margin-top: 320px;
+}
+.google-map{
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid #ebe9e9;
+    background: white;
+}
+.longcard{
+    display: none;
+}
+.map-pic{
+    width: 90%;
+    height: 100%;
+    
+}
+.map-pic img{
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+}
+.map-info-bor{
+    
+    width: 105%;
+    margin: auto;
+    margin-left: -18px;
+    margin-top: 12px;
+    
+}
+.map-title{
+    color: #324a5e;
+    font-size: 16px;
+    font-weight: bolder;
+    text-align: center;
+}
+.map-p{
+    color: #9b9b9b;
+    font-size: 15px;
+    text-align: center;
+}
+.map-button a{
+    text-decoration: none;
+    color: #444;
+    font-weight: bolder;
+    font-size: 14px;
+}
+.map-button{
+    background:#f8d340;
+    text-align: center;
+    border-radius: 20px;
+    margin: auto;
+    padding: 8px 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.google-map-wrap{
+    transform: translateY(-80px);
+}
+/* -----迷你廂方案--------------------------------------------------- */
+.green-box{
+    background: #e9f8f7;
+}
+.bg-green .card-top{
+    padding-top: 20px;
+}
+.green-box-border{
+    width: 85%;
+    margin: auto;
+    padding-top: 20px;
+    /* background: #262a6b; */
+}
+.card-bottom-wrap-green img{
+    transform: translateX(-50%);
+    max-height: 320px;
+    position: absolute;
+    left: 50%;
+    background: #e9f8f7;
+}
+.text-info .bold{
+    color: #4a4a4a;
+    font-weight: bolder;
+}
+.text-info a{
+    color: #00c4b4;
+    text-decoration: none;
+}
+.green-box-border2{
+    width: 85%;
+    margin: auto;
+
+}
+.green-items{
+    transform: translateY(230px);
+    background: white;
+}
+.g-item{
+    background: white;
+}
+
+.g-item{
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid #ebe9e9;
+    background: white;
+}
+.g-pic{
+    width: 60%;
+    height: 100%;
+    position: relative;
+}
+.g-pic img{
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+}
+.g-content{
+    display: flex;
+    padding: 15px 15px;
+}
+.laundary{
+    position: absolute;
+    background: #ec6562;
+    color: #fff;
+    right: 45px;
+    top: 85px;
+    font-size: 12px;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+.g-right{
+    width: 50%;
+    margin-top: 5px;
+}
+.g-title span{
+    color: #324a5e;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.g-title{
+    font-size: 16px;
+}
+.g-sub{
+    color: #9b9b9b;
+    font-weight: bolder;
+    font-size: 16px;
+}
+small{
+    padding-top: 10px;
+}
+.g-detail a{
+    text-decoration: none;
+    color: #333;
+    font-weight: bolder;
+    font-size: 16px;
+}
+.g-detail{
+    margin-top: 10px;
+}
+/* ----check----------------------------------------------------- */
+.green-box-border-check{
+    width: 85%;
+    margin: auto;
+}
+.check-out{
+    margin-top: 250px; 
+    
+}
+.check-list-flex{
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-between;
+}
+.check-list{
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+.cl{
+    margin-left: 65px;
+}
+.check{
+    display: flex;
+}
+.check img{
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+.check span{
+    color: #00c4b4;
+    font-weight: bolder;
+}
+.check-word{
+    margin-top: 3px;
+}
+.check-wrap{
+    width: 50%;
+    margin-bottom: 10px;
+    color: #9b9b9b;
+}
+/* -----迷你倉方案--------------------------------------------------- */   
+.bg-yellow{
+    margin-top: 80px;
+}
+.yellow-box{
+    background: #fef9e5;
+}
+.bg-yellow .card-top{
+    padding-top: 20px;
+}
+.yellow-box-border{
+    width: 85%;
+    margin: auto;
+    padding-top: 20px;
+    /* background: #262a6b; */
+}
+.card-bottom-wrap-yellow img{
+    transform: translateX(-50%);
+    max-height: 320px;
+    position: absolute;
+    left: 50%;
+    background: #fef9e5;
+}
+.yol{
+    margin-top: -60px;
+}
+/* ------比較計畫---------------------------------- */
+.compare-plan{
+    width: 100%;
+    margin-top: 30px;
+}
+.compare-button{
+    text-align: center;
+    border: 2px solid #324a5e;
+    width: 90%;
+    margin: auto;
+    border-radius: 30px;
+    padding: 8px 10px;
+}
+.compare-button a{
+    color: #324a5e;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bolder;
+}
+.triangle{
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+}
+.triangle img{
+    width: 100%;
+    margin-bottom: 3px;
+}
+/* --------您的企業也有倉儲需求----------------------------------------- */
+.require{
+    border: 1px solid #ebe9e9;
+    background: white;
+    text-align: center;
+    margin-top: 80px;
+}
+.require-border{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+.require-title h3{
+    font-size: 20px;
+    font-weight: bolder;
+    color: #324a5e;
+}
+.require-img{
+    width: 280px;
+    height: 280px;
+    margin: auto;
+    margin-top: 40px;
+}
+.require-img img{
+    width: 100%;
+}
+.require-to{
+    color: rgb(134, 134, 134);
+    font-weight: bolder;
+}
+.require-p{
+    margin: auto;
+    
+    width: 80%;
+    margin-bottom: 20px;
+}
+.require-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    line-height: 5px;
+    margin-top: 20px;
+    color: rgb(134, 134, 134);
+}
+.require-info span{
+    color: #00c4b4;
+}
+.require-button{
+    background: #f7d33f;
+    text-align: center;
+    border-radius: 20px;
+    line-height: 2rem;
+    padding: 5px 8px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.require-button a{
+    text-decoration: none;
+    color:#000;
+    font-weight: bolder;
+    font-size: 14px;
+}
+.require-button:hover{
+    background: #dbba34;
+}
+.require-button:hover a{
+    color:#fff;
+}
+/* -------台北、新北、基隆、桃園最優質的個人倉庫----------------------------- */
+.section-box1{
+    display: none;
+}
+.section-pic{
+    display: none;
+}
+.section-buttona{
+    display: none;
+}
+.section{
+    width: 85%;
+    margin: auto;
+    margin-top: 100px;
+    /* border: 1px solid red; */
+    padding-bottom: 20px;
+}
+.sec-title> div{
+    background: rgba(0,196,179,.2);
+    width: 300px;
+    height: 40px;
+    margin: auto;
+}
+.sec-title h4{
+    color: #324a5e;
+    width: 98%;
+    margin: auto;
+    font-size: 20px;
+    font-weight: bolder;
+    transform: translateY(-10px);
+    text-align: center;
+}
+.section-box{
+    width: 90%;
+    /* border: 1px solid blue; */
+    margin: auto;
+    margin-top: 10px;
+}
+.box{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.ri-title{
+    font-size: 14px;
+    font-weight: bolder;
+}
+.ri-content{
+    font-size: 11px;
+}
+.box-left{
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+.box-left img{
+    width: 100%;
+}
+
+.section-buttona{
+    display: none;
+    background:#f7d33f;
+    width: 20%;
+    margin: auto;
+    border-radius: 20px;
+    padding: 10px 0;
+    margin-top: 24px;
+}
+.section-buttona a{
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    font-weight: bolder;
+}
+.section-buttona:hover{
+    background: #dbba34;
+}
+.section-buttona:hover a{
+    color: #fff;
+}
+.restriction p{
+    margin-top: 15px;
+    color: #fff;
+    font-size: 14px;
+}
+.restriction a{
+    text-decoration: underline;
+    color: #fff;
+}
+/* --------好評推薦---------------------------------- */
+.review-part{
+    background: #fafafa;
+    padding-bottom: 100px;
+}
+.review{
+    margin: auto;
+    margin-top: 90px;
+    text-align: center;
+}
+.review-title h2{
+    font-size: 20px;
+    font-weight: bolder;
+    color: #324a5e;
+    transform: translateY(-10px);
+}
+.review p{
+    color: #949494;
+    font-size: 15px;
+    margin-top: 20px;
+}
+.review-title{
+    width: 100%;
+}
+.review-title>div{
+    background: rgba(0,196,179,.2);
+    width: 100px;
+    height: 15px;
+    margin: auto;
+}
+.score-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.num{
+    font-weight: bolder;
+    color: #324a5e;
+    font-size: 32px;
+    margin-right: 10px;
+}
+.star{
+    display: flex;
+}
+.star-pic{
+    width: 20px;
+    height: 20px;
+}
+.star-pic img{
+    width: 100%;
+}
+.num{
+    color: #324a5e;
+    font-size: 32px;
+    margin-right: 10px;
+}
+.star{
+    height: 32px;
+}
+.review-by{
+    height: 30px;
+    text-align: center;
+    margin-top: 10px;
+}
+.review-by a{
+    text-decoration: none;
+    color: rgb(138, 138, 138);
+}
+.review-by img{
+    height: 100%;
+    margin-left: 10px;
+}
+.star-pic{
+    width: 25px;
+    height: 25px;
+}
+.star-pic img{
+    width: 100%;
+}
+
+
+/* ------評論box-------------------------------------------- */
+.review-post{
+    width: 90%;
+    /* border: 1px solid #9b9b9b; */
+    margin: auto;
+    margin-top: 40px;
+    
+}
+.post-border{
+    margin-top: 60px;
+    border: 1px solid #ebe9e9;
+    margin: auto;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 16px;
+    background: white;
+}
+.star-area{
+    display: flex;
+    margin-bottom: 15px;
+}
+.stars{
+    width: 15px;
+    height: 15%;
+}
+.stars img{
+    width: 100%;
+}
+
+/* ----contact-------------------------------------------- */
+.please{
+    display: none;
+}
+.chat{
+    display: none;
+}
+.contact-wrap{
+width: 100%;
+background:#e9f8f7;
+padding: 25px 30px;
+
+}
+.contact-border{
+margin: auto;
+
+
+}
+.contact{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.contact a{
+color: #000;
+text-decoration: none;
+font-weight: bold;
+font-size: 13px;
+}
+.contact img{
+width: 25px;
+
+}
+/* -----footer---------------------------------------- */
+.f-content{
+    display: none;
+}
+.footer-wrap{
+background: #00c4b3;
+padding-top: 40px;
+padding-bottom: 80px;
+}
+
+.foot{
+width: 90%;
+display: flex;
+justify-content: space-between;
+color: #019c8f;
+font-weight: bolder;
+margin-bottom: 10px;
+margin: auto;
+}
+.f-head{
+color: #019c8f;
+}
+.footer img{
+width: 40px;
+}
+.credit-card{
+width: 100%;
+margin: auto;
+margin-top: 20px;
+}
+.bo{
+border-bottom: 1px solid#019c8f;
+margin-top: 10px;
+}
+.la{
+margin-top: 10px;
+}
+
+/* ---PC版 ------------------------------------------------------------------------- */
+@media screen and (min-width:740px) {
+    .head{
+        height: 60px
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+    }
+    .nav-bar{
+        display: flex;
+    }
+    .nav-pic img{
+        max-width: 280px;
+        justify-content: flex-end;
+    }
+    .nav-right{
+        display: none;
+    }
+    .nav-left{
+        display: block;
+    }
+    .nav-pc-button{
+        display: block;
+    }
+    .nav-left li{
+        margin-right: 25px;
+    }
+    .nav-left a{
+        text-decoration: none;
+    }
+    .navbtn{
+        text-decoration: none;
+        color: #333;
+        border: 1px solid #ffffff
+    }
+    .nav-left .green{
+        color: #333;
+    }
+    .nav-left .green:hover{
+        color: #00c4b4;
+    }
+    .nav-pc-button .navbtn1{
+        border: 1px solid black;
+        border-radius: 20px;
+        padding: 10px 20px;
+        margin-right: 10px;
+    }
+    .nav-pc-button .navbtn1:hover{
+        color: #00c4b4;
+        border: 1px solid #00c4b4;
+    }
+    
+    .nav-bar .nav a{
+        text-decoration: none;
+        color: #333;
+        margin: 10px;
+    }
+    .nav-pc-button .navbtn2{
+        background-color: #f7d33f;
+        border-radius: 20px;
+        padding: 10px 50px;
+    }
+    .nav-pc-button .navbtn2:hover{
+        background-color: #dbba34;
+        color: white;
+    }
+/* ---banner----rwd------------------------------------ */
+    .reservation{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: -100px;
+    }
+    .reservation a{
+        text-decoration: none;
+        padding: 15px 90px;
+        border-radius: 50px;
+        background-color: #f7d33f;
+        color: black;
+        font-weight: bolder;
+    }
+    .reservation a:hover{
+        background-color: #dbba34;
+        color: white;
+    }
+    .banner-pic{
+        display: none;
+    }
+    .banner-pic-pc{
+        display: block;
+        height: 935px;
+        width: 100%;
+    }
+    .banner-pic-pc img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 60%;
+    }
+    .banner{
+        margin-bottom: 80px;
+    }
+/* ----我們的倉儲方案-----rwd-------------------------------------------- */
+.storecase-title h2{
+    font-size: 30px;
+}
+.storecase p{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.storecase-title>div{
+    width: 250px;
+    height: 30px;
+}
+.card-wrap{
+    display: flex;
+}
+.first-card{
+    margin-right: 15px;
+}
+.sec-card{
+    margin-right: 15px;
+}
+.detail{
+    border: 2px solid #324a5e;
+    border-radius: 20px;
+    width: 150px;
+    margin: auto;
+    line-height: 2rem;
+}
+.detail a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #324a5e;
+    font-weight: bolder;
+}
+/*---方案及價格-------rwd-------------------------------  */
+.price-title h2{
+    font-size: 30px;
+}
+.price p{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.price-title>div{
+    width: 180px;
+    height: 30px;
+}
+/*---任意倉方案--------rwd------------------------------  */
+.gray-box{
+    width: 70%;
+    margin: auto;
+}
+.gray-box-border{
+    width: 90%;
+    display: flex;
+}
+.card-top{
+    width: 55%;
+}
+.card-bottom-wrap img{
+    transform: translate(7%, 12% );
+    max-height: 250px;
+    background: transparent;
+}
+.opening-hour{
+    display: flex;
+    flex-direction: column;
+}
+.longcard-btn{
+    margin-top: 10px;
+    margin-left: -50px;
+}
+.longcard-btn .l1{
+    font-size: 14px;
+    color: #333;
+    font-weight: bolder;
+    background: #f7d33f;
+    padding: 4px 0px;
+    margin: auto;
+    line-height: 2rem;
+    border-radius: 50px;
+    width: 35%;
+}
+.longcard-btn a.l1{
+    text-decoration: none;
+}
+.longcard-btn a.l1:hover{
+    background: #dbba34;
+    color: #ffffff;
+}
+.longcard-btn .l2{
+    border: 2px solid #324a5e;
+    border-radius: 50px;
+    padding: 4px 0px;
+    margin: auto;
+    line-height: 2rem;
+    width: 35%;
+    margin-left: -50px;
+}
+.longcard-btn a.l2{
+    text-decoration: none;
+    font-size: 14px;
+    color: #324a5e;
+    font-weight: bolder;
+}
+.longcard-btn .l2:hover{
+    background: #324a5e;
+}
+.longcard-btn a.l2:hover {
+    color: white;
+}
+
+/* ------googlemap--------rwd-------------------- */
+.google-map-wrap{
+    display: none;
+}
+.longcard{
+    display: block;
+    width: 75%;
+    margin: auto;
+    transform: translateY(-250px);
+}
+.gray-box{
+    height: 350px;
+}
+.map1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -120px;
+}
+.map1 .item{
+    width: 32%;
+    height: 350px;
+    /* padding-bottom: 20px; */
+    border: 1px solid #e7e6e2;
+    background: rgb(255, 255, 255);
+}
+.map-pic1{
+    width: 100%;
+    height: 55%;
+    padding: 10px;
+    
+}
+.map-pic1 img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    
+}
+.where{
+    text-align: center;
+    margin: 15px auto 0;
+    
+}
+.where h4{
+    font-size: 20px;
+    font-weight: bolder;
+    color: #324a5e;
+}
+.where .w-info{
+    color: #9b9b9b;
+}
+.where .w-button{
+    margin-top: 10px;
+    background: #f7d33f;
+    border-radius: 20px;
+    width: 150px;
+    margin: 10px auto 0;
+    line-height: 2rem;
+    font-size: 14px;
+}
+.where .w-button a{
+    text-decoration: none;
+    color: #333;
+    font-weight: bolder;
+}
+.where .w-button:hover{
+    background: #dbba34; 
+}
+.where .w-button:hover a{
+     color: white;
+}
+/* --------迷你箱方案---------rwd-------------------------- */
+.bg-green{
+    margin-top: -200px;
+}
+.green-box{
+    width: 70%;
+    margin: auto;
+    height: 330px;
+}
+.green-box-border2{
+    width: 90%;
+    display: flex;
+}
+.card-bottom-wrap-green img{
+    background: transparent;
+    transform: translate(7%, 12% );
+    max-height: 250px;
+}
+.green-items{
+    display: flex;
+    transform: translateY(-80px);
+    background: white;
+    width: 75%;
+    margin: auto;
+}
+.g-title{
+    white-space: nowrap;
+}
+.g-title span{
+    font-size: 26px;
+}
+.g-sub{
+    font-size: 18px;
+}
+.g-detail a{
+    font-size: 14px;
+}
+.g-item{
+    display: block;
+    width: 24.5%;
+}
+.mr{
+    margin-right: 10px;
+}
+.g-content{
+    display: block;
+    text-align: center;
+}
+.g-pic{
+    margin: auto;
+    width: 180px;
+}
+.g-right{
+    margin: auto;
+}
+.laundary{
+    right: 18px;
+    top: 70px;
+}
+/* --------check------------rwd----------------------- */
+.green-box-border-check{
+    width: 65%;
+    margin-top: -300px;
+}
+.cl{
+    margin-left: 0px;
+}
+.check-list-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+.check-list{
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+}
+.check{
+    font-size: 15px;
+    color: #949494;
+}
+/* --------迷你倉方案----------rwd------------------------- */
+.bg-yellow{
+    margin-top: 50px;
+    
+}
+.yellow-box{
+    width: 70%;
+    margin: auto;
+    height: 330px;
+}
+.green-box-border2{
+    width: 90%;
+    display: flex;
+    
+}
+.card-bottom-wrap-yellow img{
+    background: transparent;
+    transform: translate(7%, 12% );
+    max-height: 250px;
+}
+.bg-yellow .longcard-btn{
+    margin-top: 40px;
+    
+}
+.bg-yellow .green-items{
+    margin-top: -20px;
+}
+.compare-button{
+    width: 20%;
+    margin-bottom: 50px;
+}
+.compare-button a{
+    font-size: 16px;
+}
+.more-space{
+    width: 75%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid #ebe9e9;
+    color: #324a5e;
+    font-weight: bolder;
+    font-size: 20px;
+    background: rgb(255, 255, 255);
+    transform: translateY(-100px);
+    margin: auto;
+}
+.space-text{
+    width: 100%;
+}
+.more-space span{
+    color: #00c4b4;
+}
+/* ------您的企業也有倉儲需求----------------------------- */
+.require{
+    display: none;
+}
+.require-pc{
+    border: 1px solid #ebe9e9;
+    width: 100%;
+    padding: 30px 0;
+    margin-bottom: 80px;
+    margin-top: 350px;
+}
+.require-pc-pic{
+    width: 400px;
+}
+.require-pc-pic img{
+    width: 100%;
+}
+.provide span{
+    color: #00c4b4;
+}
+.require-pc-button{
+    background: #f7d33f;
+    width: 50%;
+    text-align: center;
+    border-radius: 20px;
+    line-height: 2rem;
+    padding: 5px 8px;
+    margin-left: 150px;
+}
+.require-pc-button a{
+    text-decoration: none;
+    color:#000;
+    font-weight: bolder;
+    font-size: 14px;
+}
+.require-pc-button:hover{
+    background: #dbba34;
+}
+.require-pc-button:hover a{
+    color:#fff;
+}
+.require-pc-right h2{
+    font-weight: bold;
+    font-size: 26px;
+    color: #324a5e;
+}
+.require-pc-right p{
+    color: #949494;
+    font-weight: bold;
+}
+
+.lr-bg{
+    margin-top: 80px;
+    background: rgba(219, 219, 219, 0.158);
+}
+/* ------台北、新北、基隆、桃園最優質的個人倉庫-----rwd----------------------------------- */
+.section{
+    position: relative;
+    width: 100%;
+    padding-top: 10px;
+    margin-top: -250px;
+}
+.section-pic{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 590px;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.section-pic img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.section-content{
+    position: relative;
+    margin: auto;
+    width: 80%;
+    height: 450px;
+    /* border: 1px solid red; */
+    text-align: center;
+}
+.sec-title{
+    width: 100%;
+    position: relative;
+    margin: 80px auto 10px;
+}
+.sec-title>div{
+    background: rgba(255, 255, 255, 0.808);
+    width: 650px;
+    height: 25px;
+    margin: auto;
+}
+.sec-title h4{
+    transform: translateY(-15px);
+    white-space: nowrap;
+    font-size: 30px;
+}
+.sec-title::after{
+    content: "";
+    display: block;
+    width: 50%;
+    height: 70%;
+    position: absolute;
+    left: 25%;
+    top: 13px;
+    /* background: rgb(224, 97, 97); */
+}
+.section-box{
+    display: none;
+}
+.section-box1{
+    display: block;
+}
+.box1-right{
+    flex-direction: column;
+    margin-left: 10px;
+}
+.box1-left{
+    width: 50px;
+    height: 50px;
+}
+.ri-title1{
+    font-size: 16px;
+    font-weight: bolder;
+    text-align: left;
+}
+.ri-content1{
+    text-align: left;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.box-items1{
+    background: rgba(255, 255, 255, 0.808);
+    width: 90%;
+    margin: auto;
+    height: 300px;
+}
+.boxes1{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px auto 10px;
+    margin-left: 45px;
+}
+.box1-left{
+    margin-right: 30px;
+    
+}
+.box1-right{
+    margin-top: 15px;
+}
+.section-buttona{
+    display: block;
+}
+/* ---好評推薦--rwd----------------------------------------------- */
+.review-title h2{
+    font-size: 30px;
+}
+.review p{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.review-title>div{
+    width: 135px;
+    height: 30px;
+}
+.review-post{
+    display: flex;
+    align-items: flex-start;
+    width: 73%;
+}
+.post-border{
+    height: 330px;
+    display: flex;
+    border: 1px solid #ebe9e9;
+    width: 25%;
+    background: white;
+}
+.post{
+    display: flex;
+    flex-direction: column;
+}
+.post p{
+    flex-grow: 2;
+    color: #4a4a4a;
+    font-size: 14px;
+    text-align: justify;
+}
+.author{
+    font-size: 14px;
+    color: #888;
+}
+/* ----請聯絡我們-----rwd-------------------------------- */
+.please{
+    display: block;
+}
+.chat{
+    display: block;
+}
+.contact-border{
+    width: 69%;
+    margin: auto;
+}
+.please{
+    color: #00c4b4;
+    font-weight: bolder;
+    font-size: 23px;
+}
+.contact a{
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+.contact img{
+    width: 35px;
+}
+/* ------footer---rwd-------------------------------------------- */
+.handle{
+    display: none;
+}
+.bo{
+    border-bottom: none;
+}
+.f-content{
+    display: block;
+}
+.f-content li{
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+}
+.f-content a{
+    text-decoration: none;
+}
+.f-content .delivery{
+    margin-top: 35px;
+}
+.new-tag img{
+    width: 20px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.foot{
+    display: flex;
+    flex-direction: column;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+}
+.credit-card{
+    margin-top: 50px;
+}
+}
