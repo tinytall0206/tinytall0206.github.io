@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="0611.css">
     <link rel="stylesheet" href="./css/slider.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        
+    </style>
 
 </head>
 <body>
@@ -93,11 +98,11 @@
                         <img src="./img/ver.jpg" alt="">
                     </div>
                     <div class="bg"></div>
-                    <div class="big_pic_pc">
+                    <div class="big_pic_pc" data-aos="fade-down">
                         <img src="./img/big-pic.jpg" alt="">
                     </div>
 
-                    <div class="name-arrow">
+                    <div class="name-arrow" data-aos="fade-down">
                         <div class="name">
                             Lillian Kao
                         </div>
@@ -125,7 +130,7 @@
                     
             </div>
             <div class="about-me" id="aboutMe">
-                    <div class="about-out">
+                    <div class="about-out" data-aos="slide-up">
                         <div class="ab-title">
                             About Me
                         </div>
@@ -229,7 +234,7 @@
                     <div class="exp-title">
                         Experience
                     </div>
-                    <div class="work-pc">
+                    <div class="work-pc" data-aos="fade-down"data-aos="flip-left">
                         <!--工作經歷 -->                        
                         <div class="work">
                             <div class="work-tit">
@@ -474,7 +479,7 @@
                     <!-- movwe影音資訊整合平台 -->
                     <div class="works-pc">
                         <div class="my_movwe">
-                            <div id="slider">
+                            <div id="slider" data-aos="fade-right">
                                 <div class="slide">
                                     <a href="" rel="lightbox[plants]"><video src="./img/Produce.mp4" autoplay loop muted></video></a>
                                 </div>
@@ -492,7 +497,7 @@
                                 </div>
                             </div>
                             
-                            <div class="movwe_intro">
+                            <div class="movwe_intro" data-aos="fade-right">
                                 <div class="movwe_tit">
                                     Cross-OTT-Platform Searching Site
                                 </div>
@@ -520,7 +525,7 @@
                         
                         <!-- 倉鼠先生mr hamster -->
                         <div class="my_movwe my_ham">
-                            <div id="sliderr" class="sliderr">
+                            <div id="sliderr" class="sliderr" data-aos="fade-left">
                                 <div class="slide">
                                     <a href="" rel="lightbox[plants]"><video src="./img/h1.mp4" autoplay loop muted></video></a>
                                 </div>
@@ -535,7 +540,7 @@
                                 </div>
                             </div>
                             
-                            <div class="ham_intro">
+                            <div class="ham_intro" data-aos="fade-left">
                                 <div class="ham_tit">
                                     Custmoized Hamster House Workshop
                                 </div>
@@ -563,7 +568,7 @@
                         </div>
                         
                         <!-- boxful切版練習 -->
-                        <div class="my_movwe boxful">
+                        <div class="my_movwe boxful" data-aos="fade-right">
                             <div class="slider3">
                                 <img src="./img/boxful.png" alt="">
                             </div>
@@ -596,7 +601,7 @@
                         </div>
                         
                         <!-- 個人履歷設計 -->
-                        <div class="my_movwe my_ham my_cv">
+                        <div class="my_movwe my_ham my_cv" data-aos="fade-left">
                             <div class="slider3">
                                 <img src="./img/CV.png" alt=""> 
                             </div>                
@@ -637,7 +642,7 @@
                     <div class="con_tit">
                         Contact
                     </div>
-                    <div class="contact-pc">
+                    <div class="contact-pc" data-aos="fade-down">
                         <div class="con_email">
                             <div class="email">
                                 <i class="fa-solid fa-envelope"></i>
@@ -680,7 +685,7 @@
         
     </div> -->
 
-
+    <script src="./js/jquery-3.6.0.js"></script>
 
     
     
@@ -689,8 +694,16 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <!-- aos -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!--  -->
 
+    <script>
+        AOS.init({
+        duration: 1200,
+        })
+    </script>
     
     <script>
         $('.cv_more').click(function () {
@@ -698,13 +711,7 @@
         $('.cv_larger').css('display', 'block');
     });
     </script>
-    <!-- 光箱關閉 -->
-    <script>
-    $('.cv_large_close').click(function () {
-        console.log('hello', this);
-        $('.cv_larger').css('display', 'none');
-    });
-    </script>
+  
 
     <script>
         var slider = new Slider("slider", {
