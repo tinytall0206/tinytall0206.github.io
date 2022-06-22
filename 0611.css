@@ -440,6 +440,12 @@ html{
 /* .my_works{
     height: 1050px;
 } */
+.works-mb{
+    display: block;
+}
+.works-pc{
+    display: none;
+}
 .my_movwe{
     width: 93%;
     margin: auto;
@@ -525,6 +531,9 @@ html{
     width: 100%;
 }
 
+.my_cv{
+    padding-bottom: 32px;
+}
 /* contact */
 .contact{
     height: 460px;
@@ -578,7 +587,6 @@ html{
 
 /* ----pc版-------------------------------- */
 @media screen and (min-width: 750px) {
-    /* 淡入淡出 */
     
 
     /*左側menu*/
@@ -611,10 +619,22 @@ html{
         display: block;
         z-index: 99;
     }
+    .lan-change{
+        position: absolute;
+        bottom: 24px;
+        width: 100%;
+        color: #fff;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+    }
 
     *{
         margin: 0;
         font-family: 'DM Sans', sans-serif;
+    }
+    .body_container_ch{
+        display: none;
     }
     .body_container{
         display: flex;
@@ -859,6 +879,12 @@ html{
     }
     
     /* ---作品集----- */
+    .works-mb{
+        display: none;
+    }
+    .works-pc{
+        display: block;
+    }
     .my_works{
         width: 80%;
         /* height: 95vh; */
@@ -916,7 +942,7 @@ html{
     /* 個人履歷設計 */
     .my_cv{
         margin-top: 80px;
-        margin-bottom: 40px;
+        margin-bottom: 60px;
     }
     .cv_intro{
         margin-top: 45px;
