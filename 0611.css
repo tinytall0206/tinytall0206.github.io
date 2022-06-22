@@ -884,7 +884,7 @@ html{
     .show_more a{
         font-size: 20px;
     }
-    .show_more a::after{
+    /* .show_more a::after{
         content: '';
         width: 0%;
         height: 1px;
@@ -897,7 +897,7 @@ html{
     .show_more a:hover::after{
         width:100%;
         height: 5%;
-    }
+    } */
     .my_ham{
         margin-top: 100px;
     }
@@ -919,7 +919,42 @@ html{
     .cv_intro{
         margin-top: 45px;
     }
-   
+    .cv_more a{
+        display: flex;
+        align-items: center;
+        position: relative;
+        text-decoration: none;
+        color: #fff;
+        font-size: 20px;
+        transition: 1s;
+        margin-top: 12px;
+    }
+    .cv_more span {
+        padding-left: 12px;
+        margin-right: 12px;
+        letter-spacing: 2px;
+    }
+    .cv_more a::before {
+        content: " ";
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-color: #ff651c;
+        border-radius: 50%;
+        z-index: -1;
+        transition: .5s;
+    }
+    .cv_more i {
+        margin-right: 8px;
+        transition: .3s;
+    }
+    .cv_more a:hover::before {
+        width: 110%;
+        border-radius: 200px;
+    }
+    .cv_more a:hover i {
+        transform: translateX(8px);
+    }
     /* ----contact---------- */
     .contact{
         width: 80%;
