@@ -475,7 +475,7 @@ html{
     /* margin-top: 240px; */
     font-weight: bold;
 }
-.show_more a{
+.show_more a, .cv_more{
    color: #ff651c; 
    text-decoration: none;
    font-size: 14px;
@@ -914,10 +914,12 @@ html{
     /* 個人履歷設計 */
     .my_cv{
         margin-top: 80px;
+        margin-bottom: 40px;
     }
     .cv_intro{
         margin-top: 45px;
     }
+   
     /* ----contact---------- */
     .contact{
         width: 80%;

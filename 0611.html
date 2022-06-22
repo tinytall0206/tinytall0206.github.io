@@ -10,7 +10,7 @@
     
     <link rel="stylesheet" href="0611.css">
     <link rel="stylesheet" href="./css/slider.css">
-    <link rel="stylesheet" href="./css/lightbox.css">
+
 
 </head>
 <body>
@@ -584,8 +584,8 @@
                         <!-- 個人履歷設計 -->
                         <div class="my_movwe my_ham my_cv">
                             <div class="slider3">
-                                <img src="./img/CV.png" alt="">
-                            </div>                            
+                                <img src="./img/CV.png" alt=""> 
+                            </div>                
                             
                             <div class="ham_intro cv_intro">
                                 <div class="ham_tit">
@@ -595,7 +595,7 @@
                                     My Resume
                                 </div>
                                 <div class="ham_des">
-                                    One-page official site, including brief hamster introduction and online ordering flow, to make the shopping flow easier and more convenient
+                                    I designed my resume with pop art style and combine with comic element. Make it more colorful to catch more eyes.
                                 </div>
                                 <div class="ham_deve">
                                     Development：Illustrator / Photoshop
@@ -603,8 +603,8 @@
                                 <div class="ham_year">
                                     Year：2022
                                 </div>
-                                <div class="show_more">
-                                    <a href="./img/CV.png" >SHOW MORE</a> 
+                                <div class="show_more cv_more">
+                                    <a href="./img/CV.png" target="_blank">SHOW MORE</a> 
                                 </div>
                             </div>
                         </div>                        
@@ -613,6 +613,7 @@
             
             
             </div>
+            
             <div class="contact" id="contactMe">
                     <div class="con_tit">
                         Contact
@@ -647,6 +648,18 @@
             </div>
         </div>        
     </div>
+    <!-- <div class="cv_larger">
+        <div class="cv_larger_content">
+            <div class="cv_large_close">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="cv_l_pic">
+                <img src="./img/CV.png" alt="">
+            </div>            
+        </div>
+
+        
+    </div> -->
 
 
 
@@ -657,6 +670,22 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <!--  -->
+
+    
+    <script>
+        $('.cv_more').click(function () {
+        console.log('hello', this);
+        $('.cv_larger').css('display', 'block');
+    });
+    </script>
+    <!-- 光箱關閉 -->
+    <script>
+    $('.cv_large_close').click(function () {
+        console.log('hello', this);
+        $('.cv_larger').css('display', 'none');
+    });
+    </script>
 
     <script>
         var slider = new Slider("slider", {
@@ -724,5 +753,6 @@
             }
         }
     </script> -->
+
 </body>
 </html>
