@@ -342,7 +342,7 @@ html{
 }
 .work-ver{
     width: 2px;
-    height: 705px;
+    height: 100%;
     background-color: rgb(163, 163, 163);
 }
 .edu-ver{
@@ -586,7 +586,7 @@ html{
 
 
 /* ----pc版-------------------------------- */
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 900px) {
     
 
     /*左側menu*/
