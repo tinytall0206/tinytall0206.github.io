@@ -284,6 +284,9 @@ html{
     background-color: #ff651c;
     border-radius: 10px;
 }
+.ab-skill{
+    margin-top: 16px;
+}
 /* .progress-bar_1{
     animation: progressAnimation 6s;
 }
@@ -347,12 +350,12 @@ html{
 }
 .edu-ver{
     width: 2px;
-    height: 90px;
+    
     background-color: rgb(163, 163, 163);
 }
 .edu-ver1{
     width: 2px;
-    height: 120px;
+    
     background-color: rgb(163, 163, 163);
 }
 .edu-ver2{
@@ -360,9 +363,7 @@ html{
     height: 110px;
     background-color: rgb(163, 163, 163);
 }
-.work-king{
-    height: 350px;
-}
+
 .work-left{
     display: flex;
     flex-direction: column;
@@ -436,6 +437,27 @@ html{
 .work-pc{
     padding-bottom: 32px;
 }
+.thesis{
+    position: relative;
+    
+}
+.thesis-topic{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+.thesis-content{
+    color: rgb(163, 163, 163);
+    font-size: 18px;
+}
+.thesis:hover .thesis-topic{
+    color: #ff651c;
+}
+.thesis:hover .thesis-content{
+    color: #fff;
+}
+
+
 /* -------my-works------ */
 /* .my_works{
     height: 1050px;
@@ -587,8 +609,12 @@ html{
 
 /* ----pc版-------------------------------- */
 @media screen and (min-width: 900px) {
+    .port-container{
+        width: 95%;
+        /* outline: 1px solid red; */
+        margin: auto;
+    }
     
-
     /*左側menu*/
     .op1{
         margin-top: 32px;
@@ -756,6 +782,7 @@ html{
         width: 80%;
         /* height: 95vh; */
         transform: translateX(125px);
+        padding-bottom: 48px;
     }
     .about-out{
         width: 95%;
@@ -779,7 +806,7 @@ html{
         justify-content: center;
     }
     .ab-left-img{
-        width: 60%;
+        width: 52%;
         border-radius: 20px;
 
         overflow: hidden;
@@ -795,11 +822,13 @@ html{
     .ab-right{
         /* outline: 1px solid red; */
         width: 50%;
+        margin-left: -5%;
         
     }
     .ab-line{
         display: flex;
         justify-content: space-between;
+        width: 95%;
     }
     .line-w span{
         font-size: 22px;
@@ -815,11 +844,17 @@ html{
     }
 
     /* ----my--experience----------------- */
+    .work-out{
+        width: 90%;
+        margin: auto;
+        /* outline: 1px solid red; */
+    }
     .my_experience{
         width: 80%;
         /* height: 98vh; */
         transform: translateX(125px);
         /* outline: 1px solid blue; */
+        padding-bottom: 32px;
     }
     .exp-title{
         font-size: 32px;
@@ -865,8 +900,8 @@ html{
         margin-left: 9px;
     }
     .work-edu{
-        width: 80%;
-        margin-left: 32px;
+        width: 70%;
+        margin-left: 132px;
     }
     /* .edu-ver, .edu-ver1, .edu-ver2{
         height: 110px;
