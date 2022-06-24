@@ -40,9 +40,7 @@ body{
 .only-pc{
     display: none;
 }
-.painpoint{
-    margin-top: 120px;
-}
+
 .title{
     font-size: 32px;
     color: white;
@@ -111,8 +109,14 @@ body{
     justify-content: center;
     align-items: center;
 }
+.end-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .end-pic{
-    width: 80%;
+    width: 18%;
+    margin-right: 8px;
 }
 .end-pic img{
     width: 100%;
@@ -123,6 +127,128 @@ body{
     margin-left: 25px;
     margin-top: 16px;
 }
+
+
+.Title__movwe__animation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        /* color: #FFF; */
+        color: rgba(0, 0, 0, 0.8);
+        font-size: 50px;
+        -webkit-text-stroke: 3px rgb(16, 255, 163);
+    font-family: 'Luckiest Guy', cursive;
+}
+.movwe_1, .movwe_2, .movwe_3, .movwe_4, .movwe_5{
+    font-size: 55px;
+}
+.movwe_1{
+    transition: .5s;
+   animation-name: home__movwe_1;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+   animation-delay: 0s;
+
+
+}
+.movwe_2{
+    transition: .5s;
+   animation-name: home__movwe_1;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+animation-delay: .3s;
+}
+.movwe_3{
+    transition: .5s;
+   animation-name: home__movwe_1;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+   animation-delay: .6s;
+
+}
+.movwe_4{
+    transition: .5s;
+   animation-name: home__movwe_1;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+   animation-delay: .9s;
+
+}
+.movwe_5{
+    transition: .5s;
+   animation-name: home__movwe_1;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+   animation-delay: 1.2s;
+
+}
+@keyframes home__movwe_1 {
+    /* shadow疊加  #10FFA2*/
+
+    0%{
+        color: #111;
+        filter: blur(0px) brightness(66%);
+        text-shadow: none;
+        transform: scale(1);
+    }
+
+    50%
+    {
+        color: rgba(17, 17, 17, 0.874);
+        filter: blur(1px) brightness(120%);
+
+        transform: scale(1.1);
+
+        text-shadow:
+            0 0 10px rgba(16, 255, 163, 0.7),
+            0 0 15px rgba(16, 255, 163, 0.7),
+            0 0 20px rgba(16, 255, 163, 0.7)
+            /* 0 0 80px rgba(16, 255, 163, 0.7); */
+            /* 0 0 120px rgba(16, 255, 163, 0.7); */
+    }
+    
+100%{
+        color: #111;
+        filter: blur(0px) brightness(66%);
+        text-shadow: none;
+        transform: scale(1);
+
+    }
+
+
+
+
+}    
+.contact-me{
+    margin-bottom: 80px;
+}
+.contact-tit{
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+}
+.email-tit{
+    color: white;
+    font-size: 18px;
+}
+.email a{
+    text-decoration: none;
+    color: #10ffa3b3;
+    font-size: 18px;
+}
+.contact-detail{
+    margin-top: 32px;
+}
+.email-con{
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+.github a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
 
 
 @media screen and (min-width: 900px) {
@@ -165,7 +291,7 @@ body{
 
     /* painpoint */
     .painpoint{
-        
+        margin-top: 120px;
         /* outline: 1px solid green; */
         margin: auto;
     }
@@ -252,5 +378,190 @@ body{
     .end-word{
         font-size: 40px;
         margin-left: 200px;
+    }
+
+    .movwe_1, .movwe_2, .movwe_3, .movwe_4, .movwe_5{
+        font-size: 170px;
+    }
+
+    .movwe_1{
+        transition: .5s;
+       animation-name: home__movwe_1;
+       animation-duration: 3s;
+       animation-iteration-count: infinite;
+       animation-delay: 0s;
+    
+    
+    }
+    .movwe_2{
+        transition: .5s;
+       animation-name: home__movwe_1;
+       animation-duration: 3s;
+       animation-iteration-count: infinite;
+    animation-delay: .3s;
+    }
+    .movwe_3{
+        transition: .5s;
+       animation-name: home__movwe_1;
+       animation-duration: 3s;
+       animation-iteration-count: infinite;
+       animation-delay: .6s;
+    
+    }
+    .movwe_4{
+        transition: .5s;
+       animation-name: home__movwe_1;
+       animation-duration: 3s;
+       animation-iteration-count: infinite;
+       animation-delay: .9s;
+    
+    }
+    .movwe_5{
+        transition: .5s;
+       animation-name: home__movwe_1;
+       animation-duration: 3s;
+       animation-iteration-count: infinite;
+       animation-delay: 1.2s;
+    
+    }
+    @keyframes home__movwe_1 {
+        /* shadow疊加  #10FFA2*/
+    
+        0%{
+            color: #111;
+            filter: blur(0px) brightness(66%);
+            text-shadow: none;
+            transform: scale(1);
+        }
+    
+        50%
+        {
+            color: rgba(17, 17, 17, 0.874);
+            filter: blur(1px) brightness(120%);
+    
+            transform: scale(1.1);
+    
+            text-shadow:
+                0 0 10px rgba(16, 255, 163, 0.7),
+                0 0 20px rgba(16, 255, 163, 0.7),
+                0 0 30px rgba(16, 255, 163, 0.7)
+                /* 0 0 80px rgba(16, 255, 163, 0.7); */
+                /* 0 0 120px rgba(16, 255, 163, 0.7); */
+        }
+        
+    100%{
+            color: #111;
+            filter: blur(0px) brightness(66%);
+            text-shadow: none;
+            transform: scale(1);
+    
+        }
+    
+    }    
+
+    .end-pic{
+        width: 25%;
+        margin-right:24px;
+    }
+
+
+    .contact-tit{
+        color: white;
+        font-weight: bold;
+        font-size: 40px;
+    }
+    .email-tit{
+        color: white;
+        font-size: 22px;
+    }
+    .email a, .email{
+        text-decoration: none;
+        color: #10ffa3b3;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .contact-detail{
+        margin-top: 32px;
+    }
+    .email-con{
+        margin-top: 8px;
+        margin-bottom: 24px;
+    }
+    .github a{
+        font-size: 30px;
+        color: white;
+        text-decoration: none;
+        transition: .5s ;
+    }
+    .github a:hover{
+        color: #10ffa3b3;
+     
+    }
+    .contact-me{
+        margin-bottom: 120px;
+        width: 20%;
+        /* outline: 1px solid red; */
+    }
+
+    .email{
+        position: relative;
+    }
+    
+    .email-1::after{
+        content: '';
+        width: 0%;
+        height: .5px;
+        background-color: #10ffa3b3;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: all .3s linear;
+    }
+    .email-1:hover::after{
+        width:73%;
+        height: 1%;
+    }
+    
+    .email-2::after{
+        content: '';
+        width: 0%;
+        height: .5px;
+        background-color: #10ffa3b3;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: all .3s linear;
+    }
+    .email-2:hover::after{
+        width:45%;
+        height: 1%;
+    }
+    .email-3::after{
+        content: '';
+        width: 0%;
+        height: .5px;
+        background-color: #10ffa3b3;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: all .3s linear;
+    }
+    .email-3:hover::after{
+        width:42%;
+        height: 1%;
+    }
+    .email-4::after{
+        content: '';
+        width: 0%;
+        height: .5px;
+        background-color: #10ffa3b3;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: all .3s linear;
+    }
+    .email-4:hover::after{
+        width:68%;
+        height: 1%;
     }
 }
