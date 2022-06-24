@@ -1,3 +1,8 @@
+@font-face {
+    font-family:'naikai';
+    src: url(../font/LuckiestGuy-Regular.ttf)  format("truetype");
+        
+}
 body{
     background-color: #16181f;
 }
