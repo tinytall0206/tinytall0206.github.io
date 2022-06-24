@@ -1,0 +1,256 @@
+body{
+    background-color: #16181f;
+}
+.movwe-container{
+    width: 90%;
+    /* outline: 1px solid red; */
+    margin: auto;
+}
+
+.intro-word-pc{
+    display: none;
+}
+.intro{
+    height: 100vh;
+}
+.intro-word{
+    width: 80%;
+    margin: auto;
+    margin-top: 80px;
+}
+.movwe-logo{
+    margin-left: -3px;
+    margin-top: 16px;
+}
+.movwe-name{
+    color: white;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: bolder;
+    margin-top: 16px;
+}
+.movwe-p{
+    color: white;
+    font-size: 16px;
+    line-height: 25px;
+    margin-top: 16px;
+}
+
+/* pain point */
+.only-pc{
+    display: none;
+}
+.painpoint{
+    margin-top: 120px;
+}
+.title{
+    font-size: 32px;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+}
+.content{
+    color: white;
+    font-size: 18px;
+    width: 92%;
+    margin: auto;
+    text-align: center;
+    word-wrap: break-word;
+    line-height: 30px;
+    margin-top: 24px;
+}
+.pain-pic{
+    width: 98%;
+    margin: auto;
+    margin-top: 24px;
+}
+.pain-pic img{
+    width: 100%;
+}
+
+/* solution */
+.solution{
+    margin-top: 120px;
+}
+.solution-pic{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 24px;
+}
+.solution-pic-1, .solution-pic-2{
+    width: 40%;
+}
+.solution-pic-1 img, .solution-pic-2 img{
+    width: 100%;
+}
+
+/* actor */
+.pic-pc{
+    width: 140%;
+}
+.pic-pc img{
+    width: 100%;
+}
+.actor-pic{
+    width: 40%;
+    transform: translate(-20px, 70px);
+}
+.actor-pic img{
+    width: 100%;
+}
+
+.intro-pic{
+    margin-top: 80px;
+}
+
+
+.end{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.end-pic{
+    width: 80%;
+}
+.end-pic img{
+    width: 100%;
+}
+.end-word{
+    color: white;
+    font-size: 16px;
+    margin-left: 25px;
+    margin-top: 16px;
+}
+
+
+@media screen and (min-width: 900px) {
+    .intro{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .intro-pic{
+        width: 50%;
+    }
+    .actor-pic{
+        width: 40%;
+        transform: translate(-60px, 180px);
+    }
+    .intro-word{
+        display: none;
+    }
+    .intro-word-pc{
+        display: block;
+    }
+    .intro-word-pc{
+        width: 40%;
+        margin: auto;
+    }
+    .movwe-logo{
+        width: 60%;
+    }
+    .movwe-logo img{
+        width: 100%;
+    }
+    .movwe-name{
+        font-size: 55px;
+        line-height: 80px;
+    }
+    .movwe-p{
+        font-size: 24px;
+        line-height: 45px;
+    }
+
+    /* painpoint */
+    .painpoint{
+        
+        /* outline: 1px solid green; */
+        margin: auto;
+    }
+    .only-pc{
+        display: block;
+    }
+    .title{
+        font-size: 55px;
+    }
+    .content{
+        width: 50%;
+        /* outline: 1px solid red; */
+        font-size: 20px;
+        line-height: 40px;
+        margin-top: 40px;
+    }
+    .pain-pic{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-top: 70px;
+    }
+    .pain-pic-1, .pain-pic-2{
+        width: 49%;
+    }
+
+    /* solution */
+    .solution{
+        margin-top: 200px;
+    }
+    .solution-pic-pc{
+        
+        width: 55%;
+        margin: auto;
+        /* outline: 1px solid red; */
+        margin-top: 80px;
+    }
+    .solution-pic-1-pc, .solution-pic-2-pc{
+        width: 45%;
+    }
+    .solution-pic-1-pc img, .solution-pic-2-pc img{
+        width: 100%;
+    }
+    .solution-pic-pc{
+        justify-content: space-between;
+    }
+    
+    /* episode */
+    .episode{
+        display: flex;
+        align-items: center;
+    }
+    .episode-left{
+        width: 50%;
+    }
+    .episode-right{
+        width: 95%;
+    }
+    .ep-con{
+        width: 90%;
+    }
+    /* actor */
+    .actor-pics{
+        /* margin: auto; */
+        /* outline: 1px solid red; */
+        /* width: 100%; */
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+    }
+    .actor-pc{
+        width: 50%;
+        /* margin-left: 150px; */
+    }
+    .actor-pc_mb{
+        width: 15%;
+        
+    }
+
+    /* end */
+    .end-pic{
+        width: 50%;
+    }
+    .end-word{
+        font-size: 40px;
+        margin-left: 200px;
+    }
+}

@@ -687,6 +687,8 @@ html{
     .intro-pic img{
         width: 100%;
     }
+
+    
     .intro-name-part{
         margin-top: 24px;
     }
@@ -739,7 +741,7 @@ html{
     
     .intro-part{
         width: 80%;
-        /* height: 95vh; */
+        height: 90vh;
         transform: translateX(125px);
         /* outline: 1px solid red; */
     }
@@ -751,11 +753,17 @@ html{
         display: block;
         width: 68%;
         margin: auto;
+        overflow: hidden;
     }
     .big_pic_pc img{
         width: 100%;
         border-radius: 20px;
         box-shadow: 0 0 25px rgb(0 0 0 / 85%);
+        transition: ease-in-out .3s;
+    }
+
+    .big_pic_pc img:hover{
+        transform: scale(1.03);
     }
     .name-arrow{
         margin-top: 20px;
