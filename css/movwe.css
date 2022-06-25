@@ -241,6 +241,10 @@ animation-delay: .3s;
     color: #10ffa3b3;
     font-size: 18px;
 }
+.email-3{
+    color: #10ffa3b3;
+    font-size: 18px;
+}
 .contact-detail{
     margin-top: 32px;
 }
@@ -249,10 +253,11 @@ animation-delay: .3s;
     margin-bottom: 24px;
 }
 .github a{
-    font-size: 20px;
+    font-size: 30px;
     color: white;
     text-decoration: none;
 }
+
 
 
 
@@ -538,7 +543,7 @@ animation-delay: .3s;
         transition: all .3s linear;
     }
     .email-2:hover::after{
-        width:45%;
+        width:80%;
         height: 1%;
     }
     .email-3::after{
