@@ -5,6 +5,9 @@ html{
     scroll-behavior: smooth;
     
 }
+.suotu{
+    display: none;
+}
 /* ------最上方大圖-------------- */
 
 .intro-part, .about-me, .my_experience, .my_works, .contact{
