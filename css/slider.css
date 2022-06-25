@@ -202,6 +202,7 @@
 @media screen and (min-width: 750px) {
     .my_movwe{
         display: flex;
+        align-items: center;
     }
     .slider{
         width: 40%;
