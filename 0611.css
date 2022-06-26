@@ -5,6 +5,7 @@ html{
     scroll-behavior: smooth;
     
 }
+
 /* ------最上方大圖-------------- */
 
 .intro-part, .about-me, .my_experience, .my_works, .contact{
@@ -372,7 +373,7 @@ html{
 }
 .working-tit{
     display: flex;
-    align-items: center;
+    align-items: stretch;
 }
 .work-pic{
     width: 85px;
@@ -404,8 +405,14 @@ html{
     text-align: center;
     border-radius: 10px;
     line-height: 30px;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-bottom: 10px;
+}
+.r-date{
+    margin-top: 3.5px;
+}
+.work-rr{
+    margin-top: -32px;
 }
 .work-des{
     margin-left: -35px;
@@ -443,12 +450,12 @@ html{
 }
 .thesis-topic{
     color: #fff;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
 }
 .thesis-content{
     color: rgb(163, 163, 163);
-    font-size: 18px;
+    font-size: 16px;
 }
 .thesis:hover .thesis-topic{
     color: #ff651c;
@@ -619,10 +626,10 @@ html{
         margin-top: 32px;
     }
     .option div {
-        width: 200px;
+        width: 150px;
         display: flex;
         background: #111;
-        padding: 15px 4px;
+        padding: 10px 4px;
         justify-content: center;
         align-items: center;
         border-radius: 10px;
@@ -649,7 +656,7 @@ html{
         bottom: 24px;
         width: 100%;
         color: #fff;
-        font-size: 20px;
+        font-size: 18px;
         display: flex;
         justify-content: center;
     }
@@ -663,16 +670,14 @@ html{
     }
     .body_container{
         display: flex;
-
-        /* width: 100%; */
         max-width: 1950px;
         display: flex;
-        /* flex-direction: column; */
+        justify-content: flex-end;
         height: 100%;
-        /* position: relative; */
+       
     }
     .nav-bar{
-        width: 250px;
+        width: 220px;
         height: 100vh;
         background-color: #212121;
         position: fixed;
@@ -680,7 +685,7 @@ html{
         left: 0;
     }
     .intro-pic{
-        width: 250px;
+        width: 220px;
 
     }
     .intro-pic img{
@@ -693,12 +698,12 @@ html{
     }
     .intro-name{
         color: white;
-        font-size: 40px;
+        font-size: 1.8rem;
         text-align: center;
     }
     .intro-line{
         background-color: #ff651c;
-        width: 250px;
+        width: 220px;
         height: 0.5px;
     }
     .option{
@@ -709,7 +714,7 @@ html{
     .option a{
         color: white;
         text-decoration: none;
-        font-size: 24px;
+        font-size: 18px;
         transition: .4s;
     }
     .option i{
@@ -741,7 +746,7 @@ html{
     .intro-part{
         width: 80%;
         height: 90vh;
-        transform: translateX(125px);
+        transform: translateX(112px);
         /* outline: 1px solid red; */
     }
 
@@ -768,7 +773,7 @@ html{
         margin-top: 20px;
     }
     .name{
-        font-size: 40px;
+        font-size: 32px;
     }
     .typing{
         display: flex;
@@ -788,7 +793,7 @@ html{
 
         width: 80%;
         /* height: 95vh; */
-        transform: translateX(125px);
+        transform: translateX(112px);
         padding-bottom: 48px;
     }
     .about-out{
@@ -798,22 +803,22 @@ html{
         margin-top: 16px;
     }
     .ab-title{
-        font-size: 32px;
+        font-size: 1.8rem;
     }
     .about-part{
         display: flex;
-        justify-content: center;
+        align-items: center;
         /* outline: 1px solid green; */
         margin-top: 24px;
     }
     .ab-left{
         /* outline: 1px solid blue; */
-        width: 50%;
+        width: 49%;
         display: flex;
         justify-content: center;
     }
     .ab-left-img{
-        width: 52%;
+        width: 350px;
         border-radius: 20px;
 
         overflow: hidden;
@@ -829,7 +834,7 @@ html{
     .ab-right{
         /* outline: 1px solid red; */
         width: 50%;
-        margin-left: -5%;
+        margin-left: -2%;
         
     }
     .ab-line{
@@ -838,16 +843,16 @@ html{
         width: 95%;
     }
     .line-w span{
-        font-size: 22px;
+        font-size: 18px;
     }
     .line-w{
-        font-size: 20px;
+        font-size: 16px;
     }
     .line-h{
         margin-bottom: 16px;
     }
     .skill-ti{
-        font-size: 20px;
+        font-size: 16px;
     }
 
     /* ----my--experience----------------- */
@@ -859,31 +864,32 @@ html{
     .my_experience{
         width: 80%;
         /* height: 98vh; */
-        transform: translateX(125px);
+        transform: translateX(112px);
         /* outline: 1px solid blue; */
         padding-bottom: 32px;
     }
     .exp-title{
-        font-size: 32px;
+        font-size: 28px;
         margin-top: 16px;
     }
     .work-tit{
-        font-size: 24px;
+        font-size: 22px;
         margin-bottom: 16px;
     }
     .work-com, .wor-pos{
-        font-size: 22px;
+        font-size: 20px;
     }
     .work-date{
-        font-size: 20px;
-        width: 180px;
+        font-size: 16px;
+        width: 150px;
         border-radius: 8px;
     }
+
     .work-des span{
-        font-size: 20px;
+        font-size: 18px;
     }
     .work-des li{
-        font-size: 18px;
+        font-size: 16px;
     }
     .work-ver{
         height: 100%;
@@ -930,30 +936,27 @@ html{
     .my_works{
         width: 80%;
         /* height: 95vh; */
-        transform: translateX(125px);
+        transform: translateX(112px);
         /* padding-bottom: 40px; */
         /* outline: 1px solid blue; */
     }
     .myworks_tit{
-        font-size: 32px;
+        font-size: 28px;
         margin-top: 16px;
     }
     .my_movwe{
         margin-top: 32px;
     }
     .movwe_tit, .ham_tit{
-        font-size: 22px;
+        font-size: 16px;
     }
     .movwe_name, .ham_name{
-        font-size: 24px;
+        font-size: 22px;
     }
     .movwe_des, .movwe_deve, .movwe_year, .ham_des, .ham_deve, .ham_year{
-        font-size: 20px;
+        font-size: 14px;
     }
 
-    .show_more a{
-        font-size: 20px;
-    }
     /* .show_more a::after{
         content: '';
         width: 0%;
@@ -995,7 +998,7 @@ html{
         position: relative;
         text-decoration: none;
         color: #fff;
-        font-size: 20px;
+        font-size: 16px;
         transition: 1s;
         margin-top: 12px;
     }
@@ -1028,9 +1031,10 @@ html{
     /* ----contact---------- */
     .contact{
         width: 80%;
-        height: 48vh;
-        transform: translateX(125px);
+        /* height: 48vh; */
+        transform: translateX(110px);
         /* outline: 1px solid blue; */
+        margin-bottom: 24px;
         
     }
     .contact-pc{
@@ -1041,7 +1045,7 @@ html{
         display: flex;
     }
     .con_tit{
-        font-size: 32px;
+        font-size: 1.8rem;
         margin-top: 16px;        
     }
     .contact-pc{
