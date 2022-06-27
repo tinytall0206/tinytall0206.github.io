@@ -55,6 +55,34 @@ body{
     margin-top: 16px;
 }
 
+/* about project */
+.about-project{
+    margin-top: 120px;
+    width: 92%;
+    margin: auto;
+    text-align: center;
+}
+.about-project-content{
+    font-size: 18px;
+    margin-top: 16px;
+    margin-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+}
+.pro-tit{
+    color: rgb(16, 255, 163);
+    font-weight: bold;
+}
+.pro-con{
+    color: white ;
+    margin-top: 8px;
+    line-height: 30px;
+}
+.type{
+    margin-top: 24px;
+}
+
+
 /* pain point */
 .only-pc{
     display: none;
@@ -312,6 +340,29 @@ animation-delay: .3s;
         font-size: 24px;
         line-height: 45px;
     }
+    /* about project */
+    .about-project{
+        margin-top: 200px;
+        text-align:initial;
+    }
+    .about-project-content{
+        font-size: 18px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 40px;
+        margin-bottom: 200px;
+    }
+    .pro-tit{
+        color: rgb(16, 255, 163);
+        font-weight: bold;
+    }
+    .pro-con{
+        color: white ;
+        margin-top: 16px;
+        line-height: 30px;
+    }
+
 
     /* painpoint */
     .painpoint{

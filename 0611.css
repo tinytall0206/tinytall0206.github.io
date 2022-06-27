@@ -6,7 +6,9 @@ html{
     scroll-behavior: smooth;
     
 }
-
+.show{
+    display: block;
+}
 /* ------最上方大圖-------------- */
 
 .intro-part, .about-me, .my_experience, .my_works, .contact{
@@ -623,6 +625,13 @@ html{
     }
     
     /*左側menu*/
+    .nav-bar-left{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 60vh;
+        
+    }
     .op1{
         margin-top: 32px;
     }
@@ -653,8 +662,8 @@ html{
         z-index: 99;
     }
     .lan-change{
-        position: absolute;
-        bottom: 24px;
+        /* position: absolute;
+        bottom: 24px; */
         width: 100%;
         color: #fff;
         font-size: 18px;
@@ -746,7 +755,7 @@ html{
     
     .intro-part{
         width: 80%;
-        height: 90vh;
+        
         transform: translateX(112px);
         /* outline: 1px solid red; */
     }
@@ -778,9 +787,10 @@ html{
     }
     .typing{
         display: flex;
-        margin: auto;
-        margin-left: 35%;
+        justify-content: center;
+        width: 100%;
         margin-top: 12px;
+        margin-left: -5%;
     }
     .static-text{
         font-size: 20px;
