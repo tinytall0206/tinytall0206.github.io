@@ -12,6 +12,20 @@ body{
     margin: auto;
 }
 
+.proposal{
+    color: white;
+    font-size: 20px;
+    margin-top: 16px;
+    display: flex;
+    justify-content: flex-end;
+}
+.proposal a{
+    text-decoration: none;
+    color: white;
+}
+.proposal a:hover{
+    color: rgb(16, 255, 163);
+}
 .intro-word-pc{
     display: none;
 }
