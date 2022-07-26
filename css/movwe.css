@@ -584,17 +584,18 @@ animation-delay: .3s;
     
     .email-1::after{
         content: '';
-        width: 0%;
-        height: .5px;
-        background-color: #10ffa3b3;
         position: absolute;
+        width: 0%;
         bottom: 0;
         left: 0;
+        height: .5px;
+        background-color: transparent;
         transition: all .3s linear;
     }
     .email-1:hover::after{
-        width:73%;
+        width:95%;
         height: 1%;
+        background-color:#10ffa3b3
     }
     
     .email-2::after{
